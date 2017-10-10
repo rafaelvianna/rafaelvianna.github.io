@@ -1,13 +1,12 @@
 # Site settings
 title: Rafael Vianna - Desenvolvedor Front End
 description: Um blog sobre desenvolvimento front end
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://rafaelvianna.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
-
+baseurl: "" 
+url: "http://rafaelvianna.github.io" 
 # User settings
 username: Rafael Vianna
 user_description: Desenvolvedor Front End
-user_title: Rafael Vianna
+user_title:  Desenvolvedor Front End
 email: rafael2vianna@gmail.com
 twitter_username: rferreiravianna
 github_username:  rafaelvianna
