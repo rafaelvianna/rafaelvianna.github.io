@@ -10,9 +10,9 @@ twitter_text: Apresentação do blog'
 ---
 
 
-## Vamos la?
+## Fala pessoal! Belezinha?
 
-Fala pessoal! Belezinha? Esse post será apenas de apresentação sobre mim, alguns dos motivos que me levaram a criar esse blog e minha caminhada até me tornar desenvolvedor. Espero que gostem e que de alguma forma eu possa contribuir para o conhecimento de vocês.
+Esse post será apenas de apresentação sobre mim, alguns dos motivos que me levaram a criar esse blog e minha caminhada até me tornar desenvolvedor. Espero que gostem e que de alguma forma eu possa contribuir para o conhecimento de vocês.
 
 Vamos lá! Meu nome é Rafael Vianna, sou do Rio de Janeiro e sou desenvolvedor front end.
 Minha trajetória como desenvolvedor iniciou quando comecei a faculdade de design gráfico. Como estudei no infnet e o forte de lá é T.I, na minha grade curricular tiveram muitas matérias focadas no front end.
