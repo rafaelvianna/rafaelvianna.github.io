@@ -3,18 +3,36 @@
   <channel>
     <title>Rafael Vianna - Desenvolvedor Front End</title>
     <description>Um blog sobre desenvolvimento front end</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 28 May 2018 22:19:46 -0300</pubDate>
-    <lastBuildDate>Mon, 28 May 2018 22:19:46 -0300</lastBuildDate>
-    <generator>Jekyll v3.6.0</generator>
+    <link>http://rafaelvianna.github.io/</link>
+    <atom:link href="http://rafaelvianna.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 17 Nov 2018 19:17:45 -0200</pubDate>
+    <lastBuildDate>Sat, 17 Nov 2018 19:17:45 -0200</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Tipos de variáveis em Java</title>
+        <description>&lt;p&gt; &lt;/p&gt; &lt;h2 id=&quot;aprendendo-os-tipos-de-variáveis-em-java&quot;&gt;Aprendendo os tipos de variáveis em Java&lt;/h2&gt; &lt;p&gt;Fala pessoal, beleza?&lt;/p&gt; &lt;p&gt;Estou começando a estudar desenvolvimento android, e a linguagem utilizada para isso é Java. Como não tenho nenhum conhecimento prévio de java, estou realmente aprendendo do zero, e com isso estou fazendo anotações para consultar futuramente quando as dúvidas aparecerem.&lt;/p&gt; &lt;p&gt;Vou compartilhar minhas anotações porque podem ser de alguma utilidade para quem também está no início do desenvolvimento com Java. Vamos lá!&lt;/p&gt; &lt;h2 id=&quot;o-que-são-variáveis&quot;&gt;O que são variáveis&lt;/h2&gt; &lt;p&gt;Variáveis são locais que você da um nome e guarda algum tipo de informação ali.&lt;/p&gt; &lt;h2 id=&quot;tipos-de-variáveis-em-java&quot;&gt;Tipos de variáveis em Java&lt;/h2&gt;...</description>
+        <pubDate>Sat, 17 Nov 2018 00:00:00 -0200</pubDate>
+        <link>http://rafaelvianna.github.io/tipos-de-variaveis-em-java/</link>
+        <guid isPermaLink="true">http://rafaelvianna.github.io/tipos-de-variaveis-em-java/</guid>
+        
+        <category>Java</category>
+        
+        <category>variaveis</category>
+        
+        <category>Aprendendo Java</category>
+        
+        
+        <category>Aprendendo Java</category>
+        
+      </item>
     
       <item>
         <title>Apresentação do autor</title>
         <description>&lt;h2 id=&quot;fala-pessoal-belezinha&quot;&gt;Fala pessoal! Belezinha?&lt;/h2&gt; &lt;p&gt;Esse post será apenas de apresentação sobre mim, alguns dos motivos que me levaram a criar esse blog e minha caminhada até me tornar desenvolvedor. Espero que gostem e que de alguma forma eu possa contribuir para o conhecimento de vocês.&lt;/p&gt; &lt;p&gt;Vamos lá! Meu nome é Rafael Vianna, sou do Rio de Janeiro e sou desenvolvedor front end. Minha trajetória como desenvolvedor iniciou quando comecei a faculdade de design gráfico. Como estudei no infnet e o forte de lá é T.I, na minha grade curricular tiveram muitas matérias focadas no front end. Eu me identifiquei de...</description>
         <pubDate>Sun, 03 Dec 2017 00:00:00 -0200</pubDate>
-        <link>http://localhost:4000/apresentacao/</link>
-        <guid isPermaLink="true">http://localhost:4000/apresentacao/</guid>
+        <link>http://rafaelvianna.github.io/apresentacao/</link>
+        <guid isPermaLink="true">http://rafaelvianna.github.io/apresentacao/</guid>
         
         
       </item>
