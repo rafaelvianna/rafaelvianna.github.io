@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Variáveis e Constantes em Java",
+      "category" : "Aprendendo Java",
+      "tags"     : "Java, variaveis, constantes, and Aprendendo Java",
+      "url"      : "/diferenca-entre-variavel-e-constante-em-java/",
+      "date"     : "17 Nov 2018"
+    } ,
+  
+    {
       "title"    : "Tipos de variáveis em Java",
       "category" : "Aprendendo Java",
       "tags"     : "Java, variaveis, and Aprendendo Java",
