@@ -3,18 +3,36 @@
   <channel>
     <title>Rafael Vianna - Desenvolvedor Front End</title>
     <description>Um blog sobre desenvolvimento front end</description>
-    <link>http://rafaelvianna.github.io/</link>
-    <atom:link href="http://rafaelvianna.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Nov 2018 16:21:00 -0200</pubDate>
-    <lastBuildDate>Sun, 18 Nov 2018 16:21:00 -0200</lastBuildDate>
+    <link>rafaelvianna.github.io/</link>
+    <atom:link href="rafaelvianna.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 18 Nov 2018 16:45:55 -0200</pubDate>
+    <lastBuildDate>Sun, 18 Nov 2018 16:45:55 -0200</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Tipos de variáveis em Java</title>
+        <description>&lt;p&gt; &lt;/p&gt; &lt;h2 id=&quot;aprendendo-os-tipos-de-variáveis-em-java&quot;&gt;Aprendendo os tipos de variáveis em Java&lt;/h2&gt; &lt;p&gt;Fala pessoal, beleza?&lt;/p&gt; &lt;p&gt;Estou começando a estudar desenvolvimento android, e a linguagem utilizada para isso é Java. Como não tenho nenhum conhecimento prévio de java, estou realmente aprendendo do zero, e com isso estou fazendo anotações para consultar futuramente quando as dúvidas aparecerem.&lt;/p&gt; &lt;p&gt;Vou compartilhar minhas anotações porque podem ser de alguma utilidade para quem também está no início do desenvolvimento com Java. Vamos lá!&lt;/p&gt; &lt;h2 id=&quot;o-que-são-variáveis&quot;&gt;O que são variáveis&lt;/h2&gt; &lt;p&gt;Variáveis são locais que você da um nome e guarda algum tipo de informação ali.&lt;/p&gt; &lt;h2 id=&quot;tipos-de-variáveis-em-java&quot;&gt;Tipos de variáveis em Java&lt;/h2&gt;...</description>
+        <pubDate>Sat, 17 Nov 2018 00:00:00 -0200</pubDate>
+        <link>rafaelvianna.github.io/tipos-de-variaveis-em-java/</link>
+        <guid isPermaLink="true">rafaelvianna.github.io/tipos-de-variaveis-em-java/</guid>
+        
+        <category>Java</category>
+        
+        <category>variaveis</category>
+        
+        <category>Aprendendo Java</category>
+        
+        
+        <category>Aprendendo Java</category>
+        
+      </item>
     
       <item>
         <title>Variáveis e Constantes em Java</title>
         <description>&lt;p&gt; &lt;/p&gt; &lt;h2 id=&quot;diferença-entre-variáveis-e-constantes&quot;&gt;Diferença entre variáveis e constantes&lt;/h2&gt; &lt;p&gt;Fala pessoal, beleza?&lt;/p&gt; &lt;p&gt;Hoje vamos falar sobre a diferença de uma variável para uma constante.&lt;/p&gt; &lt;p&gt;As variáveis são definições que não tem seu valor absoluto, sendo possível modificá-las ao longo do sistema. Ex:&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;String nome = &quot;João&quot;; nome = &quot;Maria&quot;; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt; &lt;/p&gt; &lt;p&gt;Esse código irá funcionar sem nenhum problema, e o resultado final da variável nome será Maria. Porque seu conteúdo foi modificado.&lt;/p&gt; &lt;p&gt;Já a constante, impossibilita que o valor seja alterado ao decorrer do programa. Quando uma constante é definida, ela nasce com um valor e permanece com o...</description>
         <pubDate>Sat, 17 Nov 2018 00:00:00 -0200</pubDate>
-        <link>http://rafaelvianna.github.io/diferenca-entre-variavel-e-constante-em-java/</link>
-        <guid isPermaLink="true">http://rafaelvianna.github.io/diferenca-entre-variavel-e-constante-em-java/</guid>
+        <link>rafaelvianna.github.io/diferenca-entre-variavel-e-constante-em-java/</link>
+        <guid isPermaLink="true">rafaelvianna.github.io/diferenca-entre-variavel-e-constante-em-java/</guid>
         
         <category>Java</category>
         
@@ -30,29 +48,11 @@
       </item>
     
       <item>
-        <title>Tipos de variáveis em Java</title>
-        <description>&lt;p&gt; &lt;/p&gt; &lt;h2 id=&quot;aprendendo-os-tipos-de-variáveis-em-java&quot;&gt;Aprendendo os tipos de variáveis em Java&lt;/h2&gt; &lt;p&gt;Fala pessoal, beleza?&lt;/p&gt; &lt;p&gt;Estou começando a estudar desenvolvimento android, e a linguagem utilizada para isso é Java. Como não tenho nenhum conhecimento prévio de java, estou realmente aprendendo do zero, e com isso estou fazendo anotações para consultar futuramente quando as dúvidas aparecerem.&lt;/p&gt; &lt;p&gt;Vou compartilhar minhas anotações porque podem ser de alguma utilidade para quem também está no início do desenvolvimento com Java. Vamos lá!&lt;/p&gt; &lt;h2 id=&quot;o-que-são-variáveis&quot;&gt;O que são variáveis&lt;/h2&gt; &lt;p&gt;Variáveis são locais que você da um nome e guarda algum tipo de informação ali.&lt;/p&gt; &lt;h2 id=&quot;tipos-de-variáveis-em-java&quot;&gt;Tipos de variáveis em Java&lt;/h2&gt;...</description>
-        <pubDate>Sat, 17 Nov 2018 00:00:00 -0200</pubDate>
-        <link>http://rafaelvianna.github.io/tipos-de-variaveis-em-java/</link>
-        <guid isPermaLink="true">http://rafaelvianna.github.io/tipos-de-variaveis-em-java/</guid>
-        
-        <category>Java</category>
-        
-        <category>variaveis</category>
-        
-        <category>Aprendendo Java</category>
-        
-        
-        <category>Aprendendo Java</category>
-        
-      </item>
-    
-      <item>
         <title>Apresentação do autor</title>
         <description>&lt;h2 id=&quot;fala-pessoal-belezinha&quot;&gt;Fala pessoal! Belezinha?&lt;/h2&gt; &lt;p&gt;Esse post será apenas de apresentação sobre mim, alguns dos motivos que me levaram a criar esse blog e minha caminhada até me tornar desenvolvedor. Espero que gostem e que de alguma forma eu possa contribuir para o conhecimento de vocês.&lt;/p&gt; &lt;p&gt;Vamos lá! Meu nome é Rafael Vianna, sou do Rio de Janeiro e sou desenvolvedor front end. Minha trajetória como desenvolvedor iniciou quando comecei a faculdade de design gráfico. Como estudei no infnet e o forte de lá é T.I, na minha grade curricular tiveram muitas matérias focadas no front end. Eu me identifiquei de...</description>
         <pubDate>Sun, 03 Dec 2017 00:00:00 -0200</pubDate>
-        <link>http://rafaelvianna.github.io/apresentacao/</link>
-        <guid isPermaLink="true">http://rafaelvianna.github.io/apresentacao/</guid>
+        <link>rafaelvianna.github.io/apresentacao/</link>
+        <guid isPermaLink="true">rafaelvianna.github.io/apresentacao/</guid>
         
         
       </item>
