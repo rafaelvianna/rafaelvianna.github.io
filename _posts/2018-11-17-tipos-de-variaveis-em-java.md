@@ -14,6 +14,7 @@ twitter_text: 'Como utilizar variáveis em Java'
 ---
 
 &nbsp;
+
 ## Aprendendo os tipos de variáveis em Java
 
 Fala pessoal, beleza?

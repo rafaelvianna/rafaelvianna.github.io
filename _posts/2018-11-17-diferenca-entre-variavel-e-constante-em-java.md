@@ -15,6 +15,7 @@ twitter_text: 'Diferença entre variáveis e constantes em Java'
 ---
 
 &nbsp;
+
 ## Diferença entre variáveis e constantes
 
 Fala pessoal, beleza?
