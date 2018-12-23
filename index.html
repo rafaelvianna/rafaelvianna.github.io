@@ -1,34 +1,266 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Curso Som Brasil</title>
+  <link rel="stylesheet" href="style/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="style/css/style.css">
+  <link rel="stylesheet" href="style/slick.css">
+  <link rel="stylesheet" href="style/slick-theme.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
+<body>
+  <div class="hero">
+    <div class="container">
+      <header>
+        <h1>
+          <a href="#">
+            <img src="img/logo.svg" alt="Logotipo Curso Som Brasil">
+          </a>
+        </h1>
+        <nav>
+            <span class='menu-mobile'>
+              <img src="img/menu.svg" alt="" class='open-menu active'>
+              <img src="img/close.svg" alt="" class='close-menu'>
+            </span>
+          <ul  class='menu'>
+            <li><a href="">Home</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Cursos</a></li>
+            <li><a href="">Metodologia</a></li>
+            <li><a href="">Depoimentos</a></li>
+            <li><a href="">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    
 
-<main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
-    {% for post in site.posts %}
-        <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-                <a class="datetime" href="{{ post.url | prepend: site.baseurl }}">
-                    <meta itemprop="datePublished" content="{{post.date}}">
-                    <time datetime="{{ post.date | date_to_xmlschema }}">
-                        <span class="day">
-                            {{ post.date | date: "%d" }}
-                        </span>
-                        <span class="month-year">
-                            {{ post.date | date: "%B %Y" }}
-                        </span>
-                    </time>
-                </a>
-                <div class="content">
-                    <a href="{{ post.url | prepend: site.baseurl }}"><h2 class="post-title" itemprop="name">{{ post.title }}</h2></a>
-                    <p class="description">
-                        {{ post.content | strip_html | truncatewords:40 }}
-                        <a href="{{ post.url | prepend: site.baseurl }}" class="link">Read more about {{post.title}}</a>
-                    </p>
+    <div class="text">
+      <div class="container">
+        <h2>Curso Som Brasil</h2>
+        <h3>Excelencia no ensino</h3>
+      </div>      
+    </div>
+  </div>
 
-                    <div class="tags">
-                        {% for tag in post.tags %}
-                            <a href="{{ site.baseurl }}/tags/#{{tag | slugify }}">{{ tag }}</a>
-                        {% endfor %}
-                    </div>
-                </div>
-        </article>
-    {% endfor %}
-</main>
+  <div class="about">
+    <div class="container">
+      <h2 class='title'>O Curso Som Brasil</h2>
+      <p class='text-container'>
+        O Curso de Música Som Brasil nasceu da necessidade Cultural da Baixada Fluminense. Então em 2006 Régis Gonçalves (músico profissional, de carreira sólida e que atua com grandes ícones da música brasileira), empreendeu-se no desafio de montar um curso que ao mesmo tempo tenha como modelo as grandes escolas de música americanas na forma de ensinar e formar grandes músicos, mas que ao mesmo tempo possua custos acessíveis aos seus alunos.
+      </p>
+
+      <p class='hided-text'>
+        O Curso de Música Som Brasil nasceu da necessidade Cultural da Baixada Fluminense. Então em 2006 Régis Gonçalves (músico profissional, de carreira sólida e que atua com grandes ícones da música brasileira), empreendeu-se no desafio de montar um curso que ao mesmo tempo tenha como modelo as grandes escolas de música americanas na forma de ensinar e formar grandes músicos, mas que ao mesmo tempo possua custos acessíveis aos seus alunos.
+      </p>
+      <p class="see-more">Ver Mais</p>
+    </div>
+  </div>
+
+  <div class="courses">
+    <div class="container">
+      <h2 class='title'>Cursos</h2>
+      <div class="row carousel2">
+        <div class="col-xl-3 piano"><a href=''><img src="img/piano.jpg" alt="Aulas de piano"></a></div>
+        <div class="col-xl-3 violino"><a href=''><img src="img/violino.jpg" alt="Aulas de violino"></a></div>
+        <div class="col-xl-3 violao"><a href=''><img src="img/violao.jpg" alt="Aulas de violao"></a></div>
+        <div class="col-xl-3 bateria"><a href=''><img src="img/bateria.jpg" alt="Aulas de bateria"></a></div>
+     
+        <div class="col-xl-3 piano"><a href=''><img src="img/guitarra.jpg" alt="Aulas de piano"></a></div>
+        <div class="col-xl-3 violino"><a href=''><img src="img/canto.jpg" alt="Aulas de violino"></a></div>
+        <div class="col-xl-3 violao"><a href=''><img src="img/percurssao.jpg" alt="Aulas de violao"></a></div>
+        <div class="col-xl-3 bateria"><a href=''><img src="img/baixo.jpg" alt="Aulas de bateria"></a></div>
+      </div>
+
+      <p class="see-more">Ver Mais</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div class="container">
+      <h2>Preparatório para vestibular de música</h2>
+      <a href="#" class='btn'>Saber Mais</a>
+    </div>
+  </div>
+
+  <div class="methods">
+    <div class="container">
+      <h2 class='title'>Metodologia</h2>
+      <p class='text-container'>
+        O Curso de Música Som Brasil nasceu da necessidade Cultural da Baixada Fluminense. Então em 2006 Régis Gonçalves (músico profissional, de carreira sólida e que atua com grandes ícones da música brasileira), empreendeu-se no desafio de montar um curso que ao mesmo tempo tenha como modelo as grandes escolas de música americanas na forma de ensinar e formar grandes músicos, mas que ao mesmo tempo possua custos acessíveis aos seus alunos.
+      </p>
+      <p class="see-more">Ver Mais</p>
+    </div>
+  </div>
+
+  <div class="testimonials">
+    <div class="container">
+      <h2 class='title'>Depoimentos</h2>
+      <div class="carousel">
+        <div class='testimonials-card'>
+          <div>
+            <img src="https://t2.ea.ltmcdn.com/pt/images/9/1/5/img_meu_cachorro_tem_o_nariz_frio_e_normal_21519_600.jpg" alt="">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          </div>
+
+          <div class="testimonials-card-footer">
+            <strong>Mario Silva</strong>
+            <small>Aluno de piano</small>
+          </div>  
+        </div>
+        
+        <div class='testimonials-card'>
+          <div>
+            <img src="https://t2.ea.ltmcdn.com/pt/images/9/1/5/img_meu_cachorro_tem_o_nariz_frio_e_normal_21519_600.jpg" alt="">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          </div>
+
+          <div class="testimonials-card-footer">
+            <strong>Mario Silva</strong>
+            <small>Aluno de piano</small>
+          </div>  
+        </div>
+
+        <div class='testimonials-card'>
+          <div>
+            <img src="https://t2.ea.ltmcdn.com/pt/images/9/1/5/img_meu_cachorro_tem_o_nariz_frio_e_normal_21519_600.jpg" alt="">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          </div>
+
+          <div class="testimonials-card-footer">
+            <strong>Mario Silva</strong>
+            <small>Aluno de piano</small>
+          </div>  
+        </div>
+
+        <div class='testimonials-card'>
+          <div>
+            <img src="https://t2.ea.ltmcdn.com/pt/images/9/1/5/img_meu_cachorro_tem_o_nariz_frio_e_normal_21519_600.jpg" alt="">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          </div>
+
+          <div class="testimonials-card-footer">
+            <strong>Mario Silva</strong>
+            <small>Aluno de piano</small>
+          </div>  
+        </div>
+
+        <div class='testimonials-card'>
+          <div>
+            <img src="https://t2.ea.ltmcdn.com/pt/images/9/1/5/img_meu_cachorro_tem_o_nariz_frio_e_normal_21519_600.jpg" alt="">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          </div>
+
+          <div class="testimonials-card-footer">
+            <strong>Mario Silva</strong>
+            <small>Aluno de piano</small>
+          </div>  
+        </div>
+
+        <div class='testimonials-card'>
+          <div>
+            <img src="https://t2.ea.ltmcdn.com/pt/images/9/1/5/img_meu_cachorro_tem_o_nariz_frio_e_normal_21519_600.jpg" alt="">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          </div>
+
+          <div class="testimonials-card-footer">
+            <strong>Mario Silva</strong>
+            <small>Aluno de piano</small>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <div class="container">
+      <h2 class='title'>Contato</h2>
+
+      <form action="">
+        <input type="text" placeholder="Nome">
+        <input type="text" placeholder="Email">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+        <button>Enviar mensagem</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div>
+        <h2><a href="#"><img src="img/logo.svg" alt=""></a></h2>
+        <small>
+          Lorem ipsum lorem ipsum lorem ipsum 
+        </small>
+        
+        <div class='social-media'>
+          <a href="#"><img src="img/facebook.png" alt=""></a>
+          <a href="#"><img src="img/instagram.png" alt=""></a>
+        </div>
+      </div>
+      
+      <div>
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Cursos</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <nav>
+          <ul>
+            <li><a href="">Metodologias</a></li>
+            <li><a href="">Depoimentos</a></li>
+            <li><a href="">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+     <h4>Curso Som Brasil</h4>
+  </div>
+
+
+  <script src='js/jquery.js'></script>
+  <script src='js/slick.min.js'></script>
+  <script>  
+    if ($( window ).width() < 768) {
+      $('.carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+      
+      $('.carousel2').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+    } else {
+      $('.carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      });
+    }
+
+    $('.menu-mobile').on('click', function() {
+      $('.menu').toggleClass('menu-active');
+      $('.open-menu').toggleClass('active');
+      $('.close-menu').toggleClass('active');
+      // $('body').toggleClass('body-menu-active');
+    })
+  </script>
+</body>
+</html>
