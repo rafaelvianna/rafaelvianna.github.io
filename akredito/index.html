@@ -252,6 +252,13 @@
       }
     });
 
+    $('.menu a').on('click', function(){
+      $('nav .menu ul').removeClass('menu-active');
+      $('.menu-open').removeClass('hide');
+      $('.menu-close').addClass('hide');
+      $('body').removeClass('body-fixed');
+    });
+
     $('.menu-open').on('click', function() {
       $('nav .menu ul').addClass('menu-active');
       $('.menu-open').addClass('hide');
@@ -265,6 +272,8 @@
       $('.menu-close').addClass('hide');
       $('body').removeClass('body-fixed');
     });
+
+   
 
     // const priceInput = document.querySelector('[name=valor]');
     // priceInput.addEventListener('input', console.log(priceInput.value));
