@@ -7,22 +7,24 @@
   <title>Akredito</title>
   <link rel="stylesheet" href="style/bootstrap-grid.min.css">
   <link rel="stylesheet" href="style/css/style.css">
+  <!-- <link rel="stylesheet" href="style/css/animate.css"> -->
   <link rel="stylesheet" href="style/slick.css">
   <link rel="stylesheet" href="style/slick-theme.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
 <body>
-  <nav>
+  <nav class='nav-menu'>
     <div class="container">
       <div class='menu'>
-        <h1><a href="#"><img src="img/logo (2).png" alt="Logotipo Akredito"></a></h1>
-
+        <h1><a href="#"><img src="img/logo.png" alt="Logotipo Akredito"></a></h1>
+        <span class='menu-open'><img src="img/list.svg" alt=""></span>
+        <span class='menu-close hide'><img src="img/close.svg" alt=""></span>
         <ul>
-          <li><a href="#">Como funciona</a></li>
-          <li><a href="#">Quem somos</a></li>
-          <li><a href="#">Faça uma simulação</a></li>
-          <li><a href="#">Dúvidas</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#how-works">Como funciona</a></li>
+          <li><a href="#about-us">Quem somos</a></li>
+          <li><a href="#simulation">Faça uma simulação</a></li>
+          <li><a href="#testimonials">Depoimentos</a></li>
+          <li><a href="#contact">Contato</a></li>
           <li><a href="#"><b>Entrar</b></a></li>
           <li><a class='btn-outline' href="#">Cadastre-se grátis</a></li>
         </ul>
@@ -33,14 +35,14 @@
   <div class="hero">
     <div class="container">
       <div class='texts'>
-        <h2 class='title-300'>Ajudando a realizar<br/> seus sonhos</h2>
+        <h2 class='title-300 wow bounceInUp'>Ajudando a realizar<br/> seus sonhos</h2>
         <p>Oferecemos uma solucao rápida e<br/> acessível para limpar seu nome.</p>
         <a href="#" class='btn'>Cadastre-se grátis</a>
       </div>
     </div>
   </div>
 
-  <div class="how-works">
+  <div class="how-works" id='how-works'>
     <div class="container">
       <h3 class='title-200'>Como funciona</h3>
       <div class='how-works-content'>
@@ -83,7 +85,7 @@
     </div>
   </div>
 
-  <div class="about-us">
+  <div class="about-us" id='about-us'>
     <div class="container">
       <div>
         <h3 class='title-200'>Conheca mais sobre nos</h3>
@@ -93,14 +95,14 @@
 
       <div>
         <div>
-          <h3 class='title-200'>Simule um servico</h3>
+          <h3 class='title-200' id='simulation'>Simule um servico</h3>
           
           <div class='simulation'>
             <div class='simulation-cards'>
               <div>
                 <p>Qual o valor da sua divida?</p>
-                <strong>R$3000</strong>
-                <input type="range" class="form-control" name="quantity" value="1" min="1" max="12" step="1">
+                <strong class='simulation-value'>R$1000</strong>
+                <input type="range" class="form-control" name="valor" value="1" min="1" max="12" step="1">
               </div>
       
               <div>
@@ -127,54 +129,60 @@
     </div>
   </div>
 
-  <div class="testimonials">
+  <div class="testimonials" id="testimonials">
     <div class="container">
-      <div>
-        <p>Otimo resolveu meus problemas, cosegui limpar meu nome e o melhor foi o super desconto que tive na divida</p>
-        <p>nome do autor</p>
-      </div>
-  
-      <div>
-        <p>Otimo resolveu meus problemas, cosegui limpar meu nome e o melhor foi o super desconto que tive na divida</p>
-        <p>nome do autor</p>
-      </div>
-  
-      <div>
-        <p>Otimo resolveu meus problemas, cosegui limpar meu nome e o melhor foi o super desconto que tive na divida</p>
-        <p>nome do autor</p>
+      <h3 class='title-200'>Depoimentos de Clientes</h3>
+
+      <div class="testimonials-content">
+        <div>
+          <p>Otimo resolveu meus problemas, cosegui limpar meu nome e o melhor foi o super desconto que tive na divida</p>
+          <p class='author-name'>nome do autor</p>
+        </div>
+    
+        <div>
+          <p>Otimo resolveu meus problemas, cosegui limpar meu nome e o melhor foi o super desconto que tive na divida</p>
+          <p class='author-name'>nome do autor</p>
+        </div>
+    
+        <div>
+          <p>Otimo resolveu meus problemas, cosegui limpar meu nome e o melhor foi o super desconto que tive na divida</p>
+          <p class='author-name'>nome do autor</p>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="contact">
+  <div class="contact" id="contact">
     <div class="container">
-      <h3>Entre em contato com a gente!</h3>
-      <p>Nossa equipe ira responder assim que possivel.</p>
-      <form>
-        <input type="text" placeholder="Nome">
-        <input type="text" placeholder="Email">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
-        <button>Enviar</button>
-      </form>
+      <div class='contact-content'> 
+        <h3 class='title-200'>Entre em contato com a gente!</h3>
+        <p>Nossa equipe ira responder assim que possivel.</p>
+        <form>
+          <input type="text" placeholder="Nome">
+          <input type="text" placeholder="Email">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+          <button class='btn-outline'>Enviar</button>
+        </form>
+      </div>
     </div>
   </div>
 
   <footer>
     <div class="container">
-      <div>
+      <div class='footer-content'>
         <div>
-          <p>Menu</p>
+          <p class='title-100'>Menu</p>
           <ul>
-            <li><a href="#">Como funciona</a></li>
-            <li><a href="#">Quem Somos</a></li>
-            <li><a href="#">Faca uma simulacao</a></li>
-            <li><a href="#">Duvidas</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#how-works">Como funciona</a></li>
+            <li><a href="#about-us">Quem Somos</a></li>
+            <li><a href="#simulation">Faca uma simulacao</a></li>
+            <li><a href="#testimonials">Depoimentos</a></li>
+            <li><a href="#contact">Contato</a></li>
           </ul>
         </div>
 
         <div>
-          <p>Espaco do Cliente</p>
+          <p class='title-100'>Espaco do Cliente</p>
           <ul>
             <li><a href="#">Faca seu cadastro</a></li>
             <li><a href="#">Faca seu login</a></li>
@@ -182,7 +190,7 @@
         </div>
 
         <div>
-          <p>Termos</p>
+          <p class='title-100'>Termos</p>
           <ul>
             <li><a href="#">Politica de privacidade</a></li>
             <li><a href="#">Condicoes de adesao</a></li>
@@ -190,7 +198,7 @@
         </div>
 
         <div>
-          <p>Atendimento</p>
+          <p class='title-100'>Atendimento</p>
           <ul>
             <li>(21) 99999-9999</li>
             <li>(21) 99999-9999</li>
@@ -200,29 +208,28 @@
         </div>
 
         <div>
-          <p>Premios e participacao</p>
+          <p class='title-100'>Premios e participacao</p>
           <ul>
             <li><img src="img/footer2.png" alt=""></li>
             <li><img src="img/footer3.png" alt=""></li>
             <li><img src="img/footer4.png" alt=""></li>
           </ul>
         </div>
-
       </div>
 
-      <div>
+      <div class='footer-social'>
         <div>
           <a href="#">
-            <img src="" alt="">
+            <img src="img/logo.png" alt="">
           </a>
         </div>
 
-        <div>
-          <img src="" alt="Facebook">
-          <img src="" alt="Instragram">
+        <div class='social-media'>
+          <a href=''><img src="img/facebook.svg" alt="Facebook"></a>
+          <a href=''><img src="img/instagram-logo.svg" alt="Instragram"></a>
         </div>
 
-        <div>
+        <div class='copyright'>
           <img src="img/footer1.png" alt="">
           <small>2019. Todos os direitos reservados.</small>
         </div>
@@ -233,6 +240,35 @@
 
 
   <script src='js/jquery.js'></script>
-  <script src='js/slick.min.js'></script>
+  <script src='js/smoth-scroll.js'></script>
+  <!-- <script src="js/wow.js"></script> -->
+
+  <script>    
+    $( document ).scroll(function() {
+      if(window.pageYOffset > 500) {
+        $('.nav-menu').addClass('active');
+      } else {
+        $('.nav-menu').removeClass('active');
+      }
+    });
+
+    $('.menu-open').on('click', function() {
+      $('nav .menu ul').addClass('menu-active');
+      $('.menu-open').addClass('hide');
+      $('.menu-close').removeClass('hide');
+      $('body').addClass('body-fixed');
+    });
+
+    $('.menu-close').on('click', function() {
+      $('nav .menu ul').removeClass('menu-active');
+      $('.menu-open').removeClass('hide');
+      $('.menu-close').addClass('hide');
+      $('body').removeClass('body-fixed');
+    });
+
+    // const priceInput = document.querySelector('[name=valor]');
+    // priceInput.addEventListener('input', console.log(priceInput.value));
+    // $('.simulation-value').html(priceInput);
+  </script>
 </body>
 </html>
