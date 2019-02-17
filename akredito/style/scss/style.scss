@@ -496,6 +496,16 @@ footer {
 				text-shadow: 0px 1px 1px #505050;
 			}
 		}
+
+		.btn {
+			background: $white;
+			color: $green;
+
+			&:hover {
+				background: $green-200;
+				color: $white;
+			}
+		}
 	}
 
 	.contact {
@@ -572,7 +582,7 @@ footer {
 	.menu-active {
 		padding-top: 100px !important;
 	}
-	
+
 	.advantages-content {
 		height: 600px;
 	}
