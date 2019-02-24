@@ -191,9 +191,27 @@ nav {
 .about-us {
 	background: $gray-200;
 	padding: 70px 0;
-	background-image: url(../../img/fundo-verde.png);
-	background-repeat: no-repeat;
-	background-position: center 60%;
+	position: relative;
+
+	.container > div {
+		position: relative;
+		z-index: 2;
+	}
+
+	.green-image {
+		display: block;
+		background-image: url(../../img/fundo-verde.png);
+		background-repeat: no-repeat;
+		background-position: center 60%;
+		background-size: cover;
+		position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 710px;
+    left: 0;
+		right: 0;
+		top: 30%;
+	}
 
 	h3 {
 		text-align: center;
@@ -226,7 +244,7 @@ nav {
 		.simulation-cards {
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
+			justify-content: space-around;
 
 			div {
 				display: flex;
@@ -249,7 +267,7 @@ nav {
 		}
 
 		.simulation-texts {
-			margin: 50px 0;
+			margin: 50px 0 20px;
 			text-align: center;
 
 			p {
@@ -333,7 +351,8 @@ nav {
 	padding: 70px 0; 
 	background-image: url(../../img/contact.png);
 	background-repeat: no-repeat;
-	background-position: -400px;
+	background-position: -20%;
+	background-size: 60%;
 	display: block;
 	height: 550px;
 
@@ -401,6 +420,15 @@ footer {
 		display: flex;
 		justify-content: space-between;
 
+		a,
+		li  {
+			font-size: 12px;
+		}
+
+		.last-image {
+			margin-top: 30px;
+		}
+
 		.title-100 {
 			font-size: $font-500;
 			font-weight: bold;
@@ -440,6 +468,77 @@ footer {
 	}
 }
 
+@mixin rangeThumb {
+  width: 18px;
+  height: 18px;
+  margin: -6px 0  0;
+  border-radius: 50%;
+  background: $green;
+  cursor: pointer;
+  border: 0 !important;
+}
+
+@mixin rangeTrack {
+  width: 100%;
+	height: 6px;
+	border-radius: 50px;
+  cursor: pointer;
+	background: $gray-100;
+}
+
+.range {
+  position: relative;
+  // width: 550px;
+  height: 5px;
+}
+
+.range input {
+  width: 100%;
+  position: absolute;
+  top: 2px;
+  height: 0;
+  -webkit-appearance: none;
+
+  // Thumb
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none; // needed again for Chrome & Safari
+    @include rangeThumb;
+  }
+
+  &::-moz-range-thumb {
+    @include rangeThumb;
+  }
+
+  &::-ms-thumb {
+    @include rangeThumb;
+  }
+
+  // Track
+  &::-webkit-slider-runnable-track {
+    @include rangeTrack;
+  }
+
+  &::-moz-range-track {
+    @include rangeTrack;
+  }
+
+  &::-ms-track {
+    @include rangeTrack;
+  }
+
+  &:focus { // override outline/background on focus
+    background: none;
+    outline: none;
+  }
+
+  &::-ms-track { // A little somethin' somethin' for IE
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+}
 
 @media screen and (max-width: 1199px) {
 	.body-fixed {
@@ -479,7 +578,7 @@ footer {
 				left: 0;
 				height: 100%;
 				top: 0;
-				padding-top: 150px;
+				padding-top: 20px;
 
 				&.menu-active {
 					display: block;
@@ -543,6 +642,14 @@ footer {
 
 		.contact-content {
 			float: none;
+
+			.btn-outline {
+				&:hover {
+					background: #324600 !important;
+					color: #ffffff !important;
+				}
+			}
+
 			h3,
 			p {
 				color: $white;
@@ -626,9 +733,6 @@ footer {
 }
 
 @media screen and (max-width: 740px) {
-	.menu-active {
-		padding-top: 100px !important;
-	}
 
 	.advantages-content {
 		height: 600px;
@@ -692,9 +796,6 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
-	.menu-active {
-		padding-top: 50px !important;
-	}
 	
 	.hero {
 		.texts {
@@ -764,11 +865,5 @@ footer {
 		.footer-social div {
 			margin-left: 0 !important;
 		}
-	}
-}
-
-@media screen and (max-width: 320px) {
-	.menu-active {
-		padding-top: 20px !important;
 	}
 }

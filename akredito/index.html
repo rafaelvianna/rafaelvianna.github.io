@@ -91,30 +91,36 @@
         <h3 class='title-200'>Conheça mais sobre nós</h3>
         <p>Assista agora</p>
         <video controls src="img/videoplayback.mp4"></video>
+        <div id='simulation'></div>
       </div>
+
+      <span class='green-image'></span>
 
       <div>
         <div>
-          <h3 class='title-200 title-simulation' id='simulation'>Simule um serviço *</h3>
+          <h3 class='title-200 title-simulation'>Simule um serviço *</h3>
           
           <div class='simulation'>
             <div class='simulation-cards'>
               <div>
                 <p>Qual o valor da sua dívida?</p>
-                <strong class='simulation-value'>R$1000</strong>
-                <input type="range" class="form-control" name="valor" value="1" min="1" max="12" step="1">
+                <strong class='simulation-value'>R$ 1000</strong>
+                <div class="range range-first">
+                  <input type="range" min="1" max="10" steps="1" value="1">
+                </div>
               </div>
       
               <div>
                 <p>Qual o numero de parcelas?</p>
-                <strong>12 parcelas</strong>
-                <input type="range" class="form-control" name="quantity" value="1" min="1" max="12" step="1">
-
+                <strong class='partials-value'>1 Parcela</strong>
+                <div class="range range-second">
+                  <input type="range" min="1" max="12" steps="1" value="1">
+                </div>
               </div>
       
               <div>
                 <p>Valor da parcela:</p>
-                <strong class='final-value'>R$3000</strong>
+                <strong class='final-value'>R$0</strong>
               </div>
             </div>
             
@@ -124,12 +130,13 @@
               <small>* Baseado no histórico de desconto médio de nossos serviços. Essa simulação não e garantida.</small>
             </div>
           </div>
+          <div id="testimonials"></div>
         </div>
       </div> 
     </div>
   </div>
 
-  <div class="testimonials" id="testimonials">
+  <div class="testimonials">
     <div class="container">
       <h3 class='title-200'>Depoimentos de Clientes</h3>
 
@@ -148,11 +155,12 @@
           <p>Ótimo resolveu meus problemas, cosegui limpar meu nome e o melhor foi o super desconto que tive na dívida</p>
           <p class='author-name'>nome do autor</p>
         </div>
+        <span  id="contact"></span>
       </div>
     </div>
   </div>
 
-  <div class="contact" id="contact">
+  <div class="contact">
     <div class="container">
       <div class='contact-content'> 
         <h3 class='title-200'>Entre em contato com a gente!</h3>
@@ -168,7 +176,7 @@
   </div>
 
   <footer>
-    <span><img src="img/linha.png" alt=""></span>
+    <span><a href="#"><img src="img/linha.png" alt=""></a></span>
     <div class="container">
       <div class='footer-content'>
         <div>
@@ -176,25 +184,25 @@
           <ul>
             <li><a href="#how-works">Como funciona</a></li>
             <li><a href="#about-us">Quem Somos</a></li>
-            <li><a href="#simulation">Faca uma simulacao</a></li>
+            <li><a href="#simulation">Faça uma simulação</a></li>
             <li><a href="#testimonials">Depoimentos</a></li>
             <li><a href="#contact">Contato</a></li>
           </ul>
         </div>
 
         <div>
-          <p class='title-100'>Espaco do Cliente</p>
+          <p class='title-100'>Espaço do Cliente</p>
           <ul>
-            <li><a href="#">Faca seu cadastro</a></li>
-            <li><a href="#">Faca seu login</a></li>
+            <li><a href="#">Faça seu cadastro</a></li>
+            <li><a href="#">Faça seu login</a></li>
           </ul>
         </div>
 
         <div>
           <p class='title-100'>Termos</p>
           <ul>
-            <li><a href="#">Politica de privacidade</a></li>
-            <li><a href="#">Condicoes de adesao</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Condições de adesão</a></li>
           </ul>
         </div>
 
@@ -209,11 +217,12 @@
         </div>
 
         <div>
-          <p class='title-100'>Premios e participacao</p>
+          <p class='title-100'>Premios e participação</p>
           <ul>
-            <li><img src="img/footer2.png" alt=""></li>
             <li><img src="img/footer3.png" alt=""></li>
             <li><img src="img/footer4.png" alt=""></li>
+            <li class='last-image'><img src="img/footer2.png" alt=""></li>
+
           </ul>
         </div>
       </div>
@@ -242,11 +251,12 @@
 
   <script src='js/jquery.js'></script>
   <script src='js/smoth-scroll.js'></script>
+  <script src='js/input-range.js'></script>
   <!-- <script src="js/wow.js"></script> -->
 
   <script>    
     $( document ).scroll(function() {
-      if(window.pageYOffset > 500) {
+      if(window.pageYOffset > 200) {
         $('.nav-menu').addClass('active');
       } else {
         $('.nav-menu').removeClass('active');
@@ -274,7 +284,7 @@
       $('body').removeClass('body-fixed');
     });
 
-   
+    
 
     // const priceInput = document.querySelector('[name=valor]');
     // priceInput.addEventListener('input', console.log(priceInput.value));
