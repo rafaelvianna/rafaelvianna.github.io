@@ -101,14 +101,14 @@ nav {
 		}
 	}
 
-	&.nav-menu {
-		&.active {
-			position: fixed;
-			width: 100%;
-			background: $white;
-			z-index: 9;
-		}
-	}
+	// &.nav-menu {
+	// 	&.active {
+	// 		position: fixed;
+	// 		width: 100%;
+	// 		background: $white;
+	// 		z-index: 9;
+	// 	}
+	// }
 }
 
 
@@ -706,6 +706,14 @@ footer {
 	.about-us {
 		padding: 70px 0 20px;
 	}
+
+	.about-us {
+		.green-image {
+			height: 510px;
+			top: 35%;
+		}
+	}
+
 	.testimonials-content {
 		
 		flex-direction: column;
@@ -739,7 +747,14 @@ footer {
 	}
 
 	.about-us {
-		background-position: center 35%;
+		.green-image {
+			top: 29%;
+		}
+
+		video {
+			width: 100%;
+			margin: 0 auto 40px;
+		}
 	}
 
 	.simulation-cards {
@@ -844,6 +859,12 @@ footer {
 			p {
 				font-size: 18px;
 			}
+		}
+
+		.green-image {
+			background-position: -300px 0px;
+			height: 460px;
+			top: 21%;
 		}
 	}
 
