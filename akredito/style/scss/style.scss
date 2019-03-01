@@ -463,6 +463,8 @@ footer {
 
 			img {
 				margin-bottom: 10px;
+				width: 100%;
+				max-width: 200px;
 			}
 		}
 	}
@@ -798,12 +800,6 @@ footer {
 			.social-media {
 				a {
 					margin: 0;
-				}
-			}
-
-			.copyright {
-				img {
-					width: 200px;
 				}
 			}
 		}
