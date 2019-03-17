@@ -1,24 +1,32 @@
 $(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  $('#menu-how-works').on('click', function() {
+    var anchorLink = $('#how-works');
+    var offsetSize = $("nav").innerHeight();
+    $("html, body").animate({scrollTop: anchorLink.offset().top - offsetSize }, 500);
+  })
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+  $('#menu-about-us').on('click', function() {
+    var anchorLink = $('#about-us');
+    var offsetSize = $("nav").innerHeight();
+    $("html, body").animate({scrollTop: anchorLink.offset().top - offsetSize }, 500);
+  })
 
-      // Store hash
-      var hash = this.hash;
+  $('#menu-simulation').on('click', function() {
+    var anchorLink = $('#simulation');
+    var offsetSize = $("nav").innerHeight();
+    $("html, body").animate({scrollTop: anchorLink.offset().top - 130 }, 500);
+  }) 
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 500, function(){
+  $('#menu-testimonials').on('click', function() {
+    var anchorLink = $('#testimonials');
+    var offsetSize = $("nav").innerHeight();
+    $("html, body").animate({scrollTop: anchorLink.offset().top - offsetSize }, 500);
+  })
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
+  $('#menu-contact').on('click', function() {
+    var anchorLink = $('#contact');
+    var offsetSize = $("nav").innerHeight();
+    $("html, body").animate({scrollTop: anchorLink.offset().top - offsetSize }, 500);
+  })
+  
+}); 

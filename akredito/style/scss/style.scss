@@ -67,7 +67,11 @@ $font-500: 18px;
 
 nav {
 	box-shadow: 0px -2px 20px #cecece;
-	
+	position: fixed;
+	width: 100%;
+	z-index: 9;
+	background: $white;
+
 	.menu {
 		display: flex;
 		justify-content: space-between;
@@ -136,7 +140,7 @@ nav {
 }
 
 .how-works {
-	padding: 100px 0;
+	padding: 70px 0;
 
 	h3 {
 		text-align: center;
@@ -286,7 +290,7 @@ nav {
 }
 
 .testimonials {
-	padding: 80px 0 100px;
+	padding: 70px 0 100px;
 
 	h3 {
 		text-align: center;
@@ -402,9 +406,7 @@ footer {
 	padding: 100px 0 50px;
 	background: $gray-200;
 	position: relative;
-	// background-image: url('../../img/linha.png');
-	// background-repeat: no-repeat;
-	// background-position: -110px 300px;
+	margin-top: -45px;
 
 	> span {
 		display: block;

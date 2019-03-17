@@ -7,7 +7,6 @@
   <title>Akredito</title>
   <link rel="stylesheet" href="style/bootstrap-grid.min.css">
   <link rel="stylesheet" href="style/css/style.css">
-  <!-- <link rel="stylesheet" href="style/css/animate.css"> -->
   <link rel="stylesheet" href="style/slick.css">
   <link rel="stylesheet" href="style/slick-theme.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -21,10 +20,10 @@
         <span class='menu-close hide'><img src="img/close.svg" alt=""></span>
         <ul>
           <li><a href="#how-works" id='menu-how-works'>Como funciona</a></li>
-          <li><a href="#about-us">Quem somos</a></li>
-          <li><a href="#simulation">Faça uma simulação</a></li>
-          <li><a href="#testimonials">Depoimentos</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <li><a href="#about-us" id='menu-about-us'>Quem somos</a></li>
+          <li><a href="#simulation" id='menu-simulation'>Faça uma simulação</a></li>
+          <li><a href="#testimonials" id='menu-testimonials'>Depoimentos</a></li>
+          <li><a href="#contact" id='menu-contact'>Contato</a></li>
           <li><a href="#"><b>Entrar</b></a></li>
           <li><a class='btn-outline' href="#">Cadastre-se grátis</a></li>
         </ul>
@@ -94,9 +93,9 @@
         <div ></div>
       </div>
 
-      <span class='green-image' id='simulation'></span>
+      <span class='green-image'></span>
 
-      <div>
+      <div id='simulation'>
         <div>
           <h3 class='title-200 title-simulation'>Simule um serviço *</h3>
           
@@ -130,13 +129,12 @@
               <small>* Baseado no histórico de desconto médio de nossos serviços. Essa simulação não e garantida.</small>
             </div>
           </div>
-          <div id="testimonials"></div>
         </div>
       </div> 
     </div>
   </div>
 
-  <div class="testimonials">
+  <div class="testimonials" id="testimonials">
     <div class="container">
       <h3 class='title-200'>Depoimentos de Clientes</h3>
 
@@ -155,7 +153,6 @@
           <p>Ótimo resolveu meus problemas, cosegui limpar meu nome e o melhor foi o super desconto que tive na dívida</p>
           <p class='author-name'>nome do autor</p>
         </div>
-        <span  ></span>
       </div>
     </div>
   </div>
@@ -168,7 +165,7 @@
         <form>
           <input type="text" placeholder="Nome">
           <input type="text" placeholder="Email">
-          <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+          <textarea name="" id="" cols="30" rows="7" placeholder="Mensagem"></textarea>
           <button class='btn-outline'>Enviar</button>
         </form>
       </div>
