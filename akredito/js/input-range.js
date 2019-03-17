@@ -1,5 +1,5 @@
-let teste1 = 1000;
-let teste2 = 1;
+let initialValue = 1000;
+let qtdPortion = 1;
 
 function calculaValor(divida, parcelas) {
     let final = (0.055*((divida*0.25)*1.1)) / (1-(1+0.055)**-parcelas)
@@ -39,8 +39,8 @@ function inputRange1() {
       sheet.textContent = getTrackStyle(this);
 
       $('.simulation-value').text(function() {
-        teste1 = 1000 * $rangeInput.val();
-        calculaValor(teste1, teste2);
+        initialValue = 1000 * $rangeInput.val();
+        calculaValor(initialValue, qtdPortion);
         return `R$ ${1000 * $rangeInput.val()}`
       });
     });
@@ -76,13 +76,14 @@ function inputRange2() {
       sheet.textContent = getTrackStyle(this);
 
       $('.partials-value').text(function() {
-        teste2 = $rangeInput.val();
+        qtdPortion = $rangeInput.val();
 
         if ($rangeInput.val() == 1 ) {
+          calculaValor(initialValue, 1);
           return `${$rangeInput.val()} Parcela`
         }
 
-        calculaValor(teste1, teste2);
+        calculaValor(initialValue, qtdPortion);
 
         return `${$rangeInput.val()} Parcelas`
       });

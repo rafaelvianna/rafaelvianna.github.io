@@ -250,9 +250,15 @@ nav {
 			align-items: center;
 			justify-content: space-around;
 
-			div {
+			> div {
 				display: flex;
 				flex-direction: column;
+				width: 33%;
+				align-items: center;
+
+				.range {
+					width: 60%;
+				}
 			}
 		}
 
