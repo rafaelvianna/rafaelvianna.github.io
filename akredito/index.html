@@ -22,19 +22,46 @@
           <li><a href="#how-works" id='menu-how-works'>Como funciona</a></li>
           <li><a href="#about-us" id='menu-about-us'>Quem somos</a></li>
           <li><a href="#simulation" id='menu-simulation'>Faça uma simulação</a></li>
-          <li><a href="#testimonials" id='menu-testimonials'>Depoimentos</a></li>
+          <li><a href="doubts.html">Dúvidas</a></li>
           <li><a href="#contact" id='menu-contact'>Contato</a></li>
-          <li><a href="#"><b>Entrar</b></a></li>
+          <li><a href="#" class='login'><b>Entrar</b></a></li>
           <li><a class='btn-outline' href="#">Cadastre-se grátis</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <div class="box-login">
+    <div>
+      <h3>Login</h3>
+      <span class='close-login'>
+        <img src="img/close.png">
+      </span>
+      <form>
+        <label>CPF:</label>
+        <div class="input-container">
+          <input type="text" class='input-cpf cpf-mask' placeholder="000.000.000-00">
+          <img class='check-cpf' src="img/check-cpf.png" alt="">
+        </div>
+
+        <div class="input-container">
+          <label class='password'>Senha:</label>
+          <input class='input-password' type="password" placeholder="********">
+          <a href='' class='forgot-password'>Esqueci minha senha</a>
+          <img class='icon-input icon-password' src='img/eye.png'>
+        </div>
+        
+
+        <button class='btn-login'>Entrar</button>
+        <small>Não tem cadastro? <a href="">Clique aqui</a></small>     
+      </form>
+    </div>
+  </div>
+
   <div class="hero">
     <div class="container">
       <div class='texts'>
-        <h2 class='title-300 wow bounceInUp'>Ajudando a realizar<br/> seus sonhos</h2>
+        <h2 class='title-300'>Ajudando a realizar<br/>seus sonhos</h2>
         <p>Oferecemos uma solução rápida e<br/> acessível para limpar seu nome.</p>
         <a href="#" class='btn'>Cadastre-se grátis</a>
       </div>
@@ -134,7 +161,7 @@
     </div>
   </div>
 
-  <div class="testimonials" id="testimonials">
+  <div class="testimonials">
     <div class="container">
       <h3 class='title-200'>Depoimentos de Clientes</h3>
 
@@ -248,6 +275,8 @@
   <script src='js/jquery.js'></script>
   <script src='js/smoth-scroll.js'></script>
   <script src='js/input-range.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js'></script>
+  <script src="js/mask-cpf.js"></script>
   <script src='js/main.js'></script>
 </body>
 </html>
