@@ -1171,6 +1171,10 @@ footer {
 
 	.simulation-cards {
 		flex-direction: column;
+	
+		>div {
+			width: 100% !important;
+		}
 	}
 
 	.contact {
