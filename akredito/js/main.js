@@ -41,12 +41,19 @@ $('.close-login').click(function(e) {
   $('body').removeClass('login-active');
 });
 
-$('.question-open').click(function(){
-  $('.questions-item-hide').addClass('active');
-  $('.question-open').addClass('questions-item-hide');
-});
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-$('.questions-item-hide').click(function(){
-  $('.questions-item-hide').removeClass('active');
-  $('.question-open').removeClass('questions-item-hide');
-});
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
