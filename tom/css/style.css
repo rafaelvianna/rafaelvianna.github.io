@@ -756,6 +756,10 @@ b i:last-child {
     display: block;
 }
 
+.portfolio_item > span {
+    cursor: pointer;
+}
+
 .portfolio_item .portfolio_item_hover {
     position: absolute;
     top: 0px;
@@ -1314,7 +1318,128 @@ header nav ul li a:hover {
     color: #4F4F4F;
 }
 
+.contact {
+    background-image: url('../img/contact.png');
+    background-image: url(../img/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.contact h2 {
+    color: #ffffff;
+    margin: 70px 0 40px;
+}
+
+.contact label {
+    display: block;
+    font-weight: 100;
+    color: #fff;
+}
+
+.contact button {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    background: #6FCF97;
+    color: #233342;
+}
+
+footer {
+    background: #181C20;
+}
+
+.portfolio_item .work-show {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0, .8);
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.portfolio_item.active .work-show {
+    display: flex;
+}
+
+.work-show div {
+    position: relative;
+    background: #fff;
+    width: 80%;
+    padding: 20px;
+}
+
+.work-show div span {
+    position: absolute;
+    right: 20px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    color: #233342;
+    margin: 0 0 20px 0;
+}
+
+.modal.in .modal-dialog {
+    width: 80% !important;
+    margin: 20px auto;
+}
+
+.modal-content .close {
+    margin: 5px 10px;
+    position: relative;
+    z-index: 9;
+}
+
+.modal-body img {
+    margin: 0 20px 10px;
+    width: 100%;
+    max-width: 260px;
+    padding-top: 23px;
+}
+
+.modal-body p {
+    font-size: 12px;
+    width: 90%;
+}
+
+.modal-body ul {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-body ul li {
+    list-style-type: none;  
+    color: #393939;
+    float: right;
+    margin-right: 30px;
+}
+
+.modal-body ul li::before {
+    content: "\2022";
+    color: #ffbf00;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
 @media (max-width: 768px) {
+    .modal-body p {
+        margin: 0 auto;
+    }
+    
 	.box-primary-nav-trigger {
 		display: block;
 	}

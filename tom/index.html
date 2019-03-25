@@ -41,7 +41,7 @@
 							<li><a href="#cases" class='menu-item'>Cases</a></li>
 							<li><a href="#capabilities" class='menu-item'>Capabilities</a></li>
 							<li><a href="#feedback" class='menu-item'>Feedbacks</a></li>
-							<li><a href="#" class='menu-item'>Contact</a></li>
+							<li><a href="#contact" class='menu-item'>Contact</a></li>
 						</ul>
 					</nav>	
 			</header>
@@ -72,17 +72,53 @@
 			<div class="no-padding portfolio_container">
 				<!-- Leap Ui -->
 				<div class="col-md-4 col-sm-6 col-xs-12">
-					<a href="leap.html" class="portfolio_item">
-						<img src="img/portfolio/train.jpg" alt="Leap UI Design" class="img-responsive" />
-						<div class="portfolio_item_hover">
-							<div class="portfolio-border clearfix">
-								<div class="item_info">
-									<span>Train Line</span>
-									<em>Tech</em>
+					<span class="portfolio_item">
+						<span data-toggle="modal" data-target="#train">
+							<img src="img/portfolio/train.jpg" alt="Leap UI Design" class="img-responsive" />
+							<div class="portfolio_item_hover">
+								<div class="portfolio-border clearfix">
+									<div class="item_info">
+										<span>Train Line</span>
+										<em>Tech</em>
+									</div>
+								</div>
+							</div>
+						</span>
+						
+						<div class="modal fade" id="train" tabindex="-1" role="dialog" aria-labelledby="trainLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-md-4 col-sm-12">
+												<img src="img/train.png" alt="train work">
+												<ul>
+													<li>Python</li>          
+													<li>Numpy</li>
+													<li>Python</li>          
+													<li>Numpy</li>
+													<li>Python</li>          
+													<li>Numpy</li>
+												</ul>
+											</div>
+
+											<div class="col-md-8 col-sm-12">
+												<p>
+														Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum <br /> <br />
+
+														Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum 
+												</p>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</a>
+					</span>
 				</div>
 				<!-- end Leap Ui -->
 
@@ -292,6 +328,25 @@
 		</div>
 	</div>
 
+	<div class="contact" id='contact'>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-12">
+					<h2 class='title'>Contact</h2>
+					<form action="">
+						<label>Name</label>
+						<input type="text" placeholder="Type your name here">
+						<label>Email</label>
+						<input type="text" placeholder="Type your name here">
+						<label>Message</label>
+						<textarea cols="30" rows="7" placeholder="type here your message"></textarea>
+						<button>Send Message</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<footer>
 		<div class="container-fluid">
 			<p class="copyright">© Thomas Dean</p>
@@ -310,29 +365,39 @@
 
 	<script>  
 
-	if ($(window).width() < 769) {
-		$('.carousel').slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-			slidesToScroll: 1,
-			autoplay:true,
-			autoplaySpeed:2500,
-			arrows:true,
-    });
-	} else {
+		if ($(window).width() < 769) {
 			$('.carousel').slick({
 				dots: true,
 				infinite: true,
 				speed: 500,
-				slidesToShow: 3,
-				slidesToScroll: 3,
+				slidesToShow: 1,
+				slidesToScroll: 1,
 				autoplay:true,
-				autoplaySpeed:3500,
+				autoplaySpeed:2500,
 				arrows:true,
+			});
+		} else {
+				$('.carousel').slick({
+					dots: true,
+					infinite: true,
+					speed: 500,
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					autoplay:true,
+					autoplaySpeed:3500,
+					arrows:true,
+			});
+		}
+
+		$('.work-close').click(function() {
+			$('.work-show').css('display', 'none');
 		});
-	}
+
+		$('.portfolio_item').click(function(){
+			$(this).addClass('active');
+		});
+
+		
   </script>
 </body>
 

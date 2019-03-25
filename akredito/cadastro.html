@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Akredito</title>
+  <link rel="stylesheet" href="style/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="style/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
+
+<body class="create-account">
+  <nav class='nav-menu'>
+    <div class="container">
+      <div class='menu'>
+        <h1><a href="index.html"><img src="img/logo.png" alt="Logotipo Akredito"></a></h1>
+        <span class='menu-open'><img src="img/list.svg" alt=""></span>
+        <span class='menu-close hide'><img src="img/close.svg" alt=""></span>
+        <ul>
+          <li><a href="#how-works" id='menu-how-works'>Como funciona</a></li>
+          <li><a href="#about-us" id='menu-about-us'>Quem somos</a></li>
+          <li><a href="#simulation" id='menu-simulation'>Faça uma simulação</a></li>
+          <li><a href="duvidas.html">Dúvidas</a></li>
+          <li><a href="#contact" id='menu-contact'>Contato</a></li>
+          <li><a href="#" class='login'><b>Entrar</b></a></li>
+          <li><a class='btn-outline' href="#">Cadastre-se grátis</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="box-login">
+    <div>
+      <h3>Login</h3>
+      <span class='close-login'>
+        <img src="img/close.png">
+      </span>
+      <form>
+        <label>CPF:</label>
+        <div class="input-container">
+          <input type="text" class='input-cpf cpf-mask' placeholder="000.000.000-00">
+          <img class='check-cpf' src="img/check-cpf.png" alt="">
+        </div>
+
+        <div class="input-container">
+          <label class='password'>Senha:</label>
+          <input class='input-password' type="password" placeholder="********">
+          <a href='' class='forgot-password'>Esqueci minha senha</a>
+          <img class='icon-input icon-password' src='img/eye.png'>
+        </div>
+
+
+        <button class='btn-login'>Entrar</button>
+        <small>Não tem cadastro? <a href="">Clique aqui</a></small>
+      </form>
+    </div>
+  </div>
+
+  <div class="create-account-steps">
+    <div class="container">
+      <div class="steps-content">
+        <div>
+          <ul>
+            <li class='active first'><span>1</span> Vamos começar</li>
+            <li class='second'><span>2</span> Mais sobre você</li>
+            <li class='third'><span>3</span> Onde você mora?</li>
+            <li class='fourth'><span>4</span> Pra finalizar</li>
+          </ul>
+        </div>
+  
+        <div class="step first-step active">
+          <div class='text'>
+            <h4>Nos conte um pouco sobre você.</h4>
+            <p>Nâo se preocupe, todas as suas informações estão seguras!</p>
+          </div>
+  
+          <form>
+            <div>
+              <div class='complete-name'>
+                <label>Qual seu nome completo?</label>
+                <input type="text" placeholder="John Knows Nothing Snow">
+              </div>
+  
+              <div class='space-between input-with-image'>
+                <label>E o seu CPF?</label>
+                <input type="text" class='register-cpf input-cpf cpf-mask' placeholder="000.000.000-00">
+                <img src="img/wrong.png">
+              </div>
+  
+              <div>
+                <label>Qual seu WhastApp?</label>
+                <input type="text" placeholder="(00) 00000-0000">
+              </div>
+            </div>
+  
+            <div>
+              <div>
+                <label>Telefone para contato:</label>
+                <input type="text" placeholder="(00) 00000-0000">
+              </div>
+  
+              <div class='space-between'>
+                <label>Qual seu e-mail?</label>
+                <input type="text" placeholder="email@hotmail.com">
+              </div>
+  
+              <div class='input-with-image'>
+                <label>Crie uma senha</label>
+                <input class="register-input-password" type="password" placeholder="********">
+                <img class="register-password" src="img/eye.png">
+              </div>
+            </div>
+  
+            <div>
+              <div class='dirty-name'>
+                <label>Você está com o nome sujo?</label>
+                <span class='custom-button'>
+                  <button class='yes'>Sim</button>
+                  <button class='no'>Não</button>
+                  <button class='dont-know'>Não sei</button>
+                </span>
+              </div>
+  
+              <div class='bad-check space-between'>
+                <label>Você tem cheque sem fundo?</label>
+                <span class='custom-button'>
+                  <button class='yes'>Sim</button>
+                  <button class='no'>Não</button>
+                  <button class='dont-know'>Não sei</button>
+                </span>
+              </div>
+  
+              <div class='registry'>
+                <label>Você tem protesto em cartório?</label>
+                <span class='custom-button'>
+                  <button class='yes'>Sim</button>
+                  <button class='no'>Não</button>
+                  <button class='dont-know'>Não sei</button>
+                </span>
+              </div>
+            </div>
+  
+            <button class='btn finish-first-step'>Avançar</button>
+          </form>
+        </div>
+
+        <div class="step second-step">
+          <div class='text'>
+            <p>Nâo se preocupe, todas as suas informações estão seguras!</p>
+          </div>
+
+          <form>
+            <div>
+              <div class='complete-name'>
+                <label>Data de nascimento:</label>
+                <input type="date">
+              </div>
+  
+              <div class='space-between input-with-image'>
+                <label>Sexo:</label>
+                <span class='custom-button gender'>
+                  <button class='woman'>Feminino</button>
+                  <button class='man'>Masculino</button>
+                </span>
+              </div>
+  
+              <div>
+                <label>Qual nome da sua mãe?</label>
+                <input type="text" placeholder="Nome completo">
+              </div>
+            </div>
+  
+            <div>
+              <div>
+                <label>Estado civil:</label>
+                <select>
+                  <option value="solteiro">Solteiro</option>
+                  <option value="casado">Casado</option>
+                  <option value="viuvo">Viuvo</option>
+                  <option value="divorciado">Divorciado</option>
+                </select>
+              </div>
+  
+              <div class='space-between'>
+                <label>Nível de escolaridade:</label>
+                <select>
+                  <option value="fundamental">Ensino Fundamental Incompleto</option>
+                  <option value="casado">Ensino Fundamental completo</option>
+                </select>
+              </div>
+  
+              <div>
+                <label>Situação de trabalho:</label>
+                <select>
+                  <option value="fundamental">Trabalhando</option>
+                  <option value="casado">Desempregado</option>
+                </select>
+              </div>
+            </div>
+  
+            <div>
+              <div>
+                <label>Qual dia do seu pagamento?</label>
+                <select>
+                  <option value="solteiro">01 / 05</option>
+                  <option value="casado">05 / 10</option>
+                </select>
+              </div>
+  
+              <div class='space-between'>
+                <label>Quanto você recebe por mês?</label>
+                <input type="text" placeholder="RS 00,00">
+              </div>
+  
+              <div>
+                <label>Por mês, você e sua família ganham:</label>
+                <input type="text" placeholder="RS 00,00">
+              </div>
+            </div>
+            
+            <button class='btn finish-second-step'>Avançar</button>
+            <button class='btn-outline step2-back'>Voltar</button>
+          </form>
+        </div>
+        
+        <div class="step third-step">
+          <form>
+            <div>
+              <div>
+                <label>CEP:</label>
+                <input type="date" placeholder="00.000-000">
+              </div>
+  
+              <div class='adress'>
+                <label>Endereço:</label>
+                <input type="date" placeholder="Nome da rua, Bairro">
+              </div>
+  
+              <div>
+                <label>Número:</label>
+                <input type="text" placeholder="00.000-000">
+              </div>
+            </div>
+  
+            <div>
+              <div class='complement'>
+                <label>Complemento:</label>
+                <input type="text" placeholder="Apartamento, casa, vila, etc.">
+              </div>
+  
+              <div class='state'>
+                <label>Estado:</label>
+                <select>
+                  <option value="rj">Rio de Janeiro</option>
+                </select>
+              </div>
+  
+              <div class='city'>
+                <label>Cidade:</label>
+                <select>
+                  <option value="rj">Rio de Janeiro</option>
+                </select>
+              </div>
+            </div>
+  
+            <button class='btn finish-third-step'>Avançar</button>
+            <button class='btn-outline step3-back'>Voltar</button>
+          </form>
+        </div>
+  
+        <div class="step fourth-step">
+          <form>
+            <div class="text">
+              <p>Falta só mais um pouco para criarmos seu cadastro!</p>
+            </div>
+  
+            <div class='two-columns'>
+              <div class='clean-name'>
+                <label>Porquê quer ter o nome limpo?</label>
+                <select>
+                  <option value="rj">Rio de Janeiro</option>
+                </select>
+              </div>
+  
+              <div>
+                <label>Parcela compras de mercado ou farmácia?</label>
+                <span class='custom-button farma'>
+                  <button class='yes'>Sim</button>
+                  <button class='no'>Não</button>
+                </span>
+              </div>
+
+            </div>
+  
+            <div class='send-documents'>
+              <small>Selfie com documento:</small>
+              <button><img src="">Tirar foto</button>
+              <button><img src="">Enviar foto</button>
+              <small>Tire ou envie uma foto sua segurando seu documento oficial</small>
+            </div>
+  
+            <div>
+              <div>
+                <label>Melhor data para pagamento do boleto:</label>
+                <input type="date">
+              </div>
+  
+              <div>
+                <label>Como conheceu a Akredito?</label>
+                <select>
+                  <option value="rj">Rio de Janeiro</option>
+                </select>
+              </div>
+  
+              <div>
+                <label>Por qual motivo você não conseguiu pagar suas contas? E por que vai conseguir pagar agora?</label>
+                <textarea cols="30" rows="10"></textarea>
+              </div>
+  
+              <div>
+                <input type="checkbox">
+                <p>Li e aceito a <a href="#">Política de Privacidade</a></p>
+              </div>
+  
+              <div>
+                <input type="checkbox">
+                <p>Li e aceito as <a href="#">Condições de Adesão</a></p>
+              </div>
+            </div>
+            
+            <button class='btn'>Finalizar</button>
+            <button class='btn-outline step3-back'>Voltar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <span><a href="index.html"><img src="img/linha2.png" alt=""></a></span>
+    <div class="container">
+      <div class='footer-social'>
+        <div>
+          <a href="index.html">
+            <img src="img/logo.png" alt="">
+          </a>
+        </div>
+
+        <div class='copyright'>
+          <img src="img/footer1.png" alt="">
+          <small>2019. Todos os direitos reservados.</small>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src='js/jquery.js'></script>
+  <script src='js/smoth-scroll.js'></script>
+  <script src='js/input-range.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js'></script>
+  <script src="js/mask-cpf.js"></script>
+  <script src='js/register.js'></script>
+  <script src='js/main.js'></script>
+</body>
+
+</html>

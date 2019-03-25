@@ -1,4 +1,4 @@
-var cpfMask = function (val) {
+const cpfMask = function (val) {
     return val.replace(/\D/g, '').length > 11 ? '000.000.000-09' : '000.000.000-09';
  },
  cpfOptions = {
