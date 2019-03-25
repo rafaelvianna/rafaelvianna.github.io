@@ -1436,6 +1436,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .contact-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
     .modal-body p {
         margin: 0 auto;
     }
