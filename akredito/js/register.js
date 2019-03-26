@@ -89,6 +89,18 @@ $('.gender .man').click(function(e){
 	$('.gender .man').addClass('active');
 });
 
+$('.portion .yes').click(function(e){
+	e.preventDefault();
+	$('.portion .yes').addClass('active');
+	$('.portion .no').removeClass('active');
+});
+
+$('.portion .no').click(function(e){
+	e.preventDefault();
+	$('.portion .yes').removeClass('active');
+	$('.portion .no').addClass('active');
+});
+
 $('.finish-first-step').click(function(e){
 	e.preventDefault();
 	$('.first-step').removeClass('active');

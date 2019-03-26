@@ -1032,6 +1032,12 @@ footer {
 						margin: 5px 0;
 						padding: 7px;
 					}
+
+					&.portion {
+						width: 130px;
+						padding: 6px;
+						margin: 5px 0;
+					}
 				}
 
 				.input-with-image {
@@ -1055,36 +1061,112 @@ footer {
 				.complement {
 					width: 50%;
 				}
-
-				.farma {
-
-				}
 			}
 
 			.two-columns {
 				justify-content: flex-start;
 				float: left;
-				margin-right: 50px;
+				margin-right: 30px;
+				width: 80%;
+				display: flex;
+    		flex-direction: column;
+				
+				> div {
+					display: flex;
+
+					div {
+						width: 50%;
+						margin: 0 40px 20px 0;			
+					}
+				}
 
 				.farma {
 					padding: 6px;
 					margin: 5px 0;
 					width: 120px;
 				}
-
-				.clean-name {
-					margin-right: 40px;
-				}
 			}
 
 			.send-documents {
 				flex-direction: column;
 				
+				button,
+				label {
+					width: 100%;
+					background: #fff;
+					border: none;
+					height: 25px;
+					display: flex;
+					align-items: center;
+					border-radius: 2px;
+					margin-bottom: 10px;
+					font-size: 12px;
+					
+					&:hover {
+						cursor: pointer;
+					}
+
+					img {
+						margin: 0 10px;
+					}
+				}
+
+				label {
+					margin-bottom: 0;
+				}
+
+				> div {
+					background-image: url('../../img/step.png');
+					background-repeat: no-repeat;
+					background-size: cover;
+					padding: 10px;
+					background-position: 70% 0px;
+					height: 150px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					margin: 5px 0;
+				}
+
+				.select-file {
+					display: none;
+				}
+
+				small {
+					font-size: 12px;
+				}
 			}
 
 			> button {
 				float: right;
 				margin: 0 10px;
+			}
+
+			.reason {
+				flex-direction: column;
+
+				textarea {
+					background: #edecf5;
+					border: none;
+					width: 100%;
+					padding: 10px;
+					border-radius: 5px;
+					margin: 5px 0;
+				}
+
+				.checkbox {
+					display: flex;
+					align-items: center;
+
+					input {
+						width: auto;
+						margin: 15px 15px 15px 0;
+					}
+
+					a {
+						text-decoration: underline;
+					}
+				}
 			}
 		}
 	}
@@ -1357,6 +1439,53 @@ footer {
 			}
 		}
 	}
+
+	.create-account {
+		.step {
+			form {
+				> div {
+					flex-direction: column;
+					margin-bottom: 0;
+
+					.space-between {
+						margin: 0;
+					}
+
+					div {
+						margin: 20px 0;
+					}
+
+					.custom-button {
+						width: 250px;
+					}
+
+					.complete-name,
+					.adress,
+					.complement {
+						width: 100%;
+					}
+				}
+
+				.two-columns {
+					width: 100%;
+					float: none;
+
+					div {
+						flex-direction: column;
+						width: 100% !important;
+					}
+				}
+
+				.send-documents {
+					width: 150px;
+				}
+
+				.checkbox {
+					margin: 0;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 740px) {
@@ -1559,6 +1688,35 @@ footer {
 
 			.question-contact-text-area {
 				width: 100%;
+			}
+		}
+	}
+
+	.create-account-steps {
+		.steps-content {
+			margin: 100px 0;
+
+			.step {
+				padding: 20px;
+
+				.text {
+					margin-bottom: 10px;
+				}
+			}
+
+			ul {
+				li {
+					display: none;
+
+					&.active {
+						display: block;
+						border-radius: 5px 5px 0 0 !important;
+					}
+				}
+			}
+
+			.reason {
+				margin-bottom: 40px;
 			}
 		}
 	}
