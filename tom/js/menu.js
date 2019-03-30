@@ -60,3 +60,36 @@ $( document ).scroll(function() {
 		$('.box-header').removeClass('active');
 	}
 });
+
+
+$(document).ready(function(){
+  $('#menu-cases').on('click', function() {
+    var anchorLink = $('#cases');
+    var offsetSize = $("nav").innerHeight();
+    $("html, body").animate({scrollTop: anchorLink.offset().top - 0 }, 500);
+  })
+
+  $('#menu-capabilities').on('click', function() {
+    var anchorLink = $('#capabilities');
+    var offsetSize = $("nav").innerHeight();
+    $("html, body").animate({scrollTop: anchorLink.offset().top - 80 }, 500);
+  })
+
+  $('#menu-feedback').on('click', function() {
+    var anchorLink = $('#feedback');
+    var offsetSize = $("nav").innerHeight();
+    $("html, body").animate({scrollTop: anchorLink.offset().top - 80 }, 500);
+  }) 
+
+  $('#menu-contact').on('click', function() {
+    var anchorLink = $('#contact');
+    var offsetSize = $("nav").innerHeight();
+    $("html, body").animate({scrollTop: anchorLink.offset().top - 0 }, 500);
+	})
+	
+	$('#menu-home').on('click', function() {
+    var anchorLink = $('#home');
+    var offsetSize = $("nav").innerHeight();
+    $("html, body").animate({scrollTop: anchorLink.offset().top - 0 }, 500);
+  })
+}); 

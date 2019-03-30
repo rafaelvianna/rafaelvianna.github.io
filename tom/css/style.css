@@ -252,6 +252,14 @@ h5 {
     font-weight: 900;
 }
 
+.box-logo a::after {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #ffbf00;
+}
+
 .active-menu-link {
     color: #f9bb2a !important;
 }
@@ -1213,6 +1221,10 @@ header nav ul li a:hover {
     width: 100%;
 }
 
+.capabilities {
+    margin-bottom: 100px;
+}
+
 .capabilities .row {
     display: flex;
     justify-content: space-between;
@@ -1300,6 +1312,10 @@ header nav ul li a:hover {
     padding: 20px;
     color: #4F4F4F;
     height: 210px;
+}
+
+.testimonial.sherpa > div {
+    height: 250px;
 }
 
 .testimonial img {
@@ -1402,10 +1418,10 @@ footer {
 }
 
 .modal-body img {
-    margin: 0 20px 10px;
+    margin: 23px 20px 10px;
     width: 100%;
     max-width: 260px;
-    padding-top: 23px;
+    border-radius: 5px
 }
 
 .modal-body p {
