@@ -1426,7 +1426,7 @@ footer {
 
 .modal-body p {
     font-size: 12px;
-    width: 90%;
+    padding: 0 30px;
 }
 
 .modal-body ul {
@@ -1451,6 +1451,9 @@ footer {
     margin-left: -1em;
 }
 
+.modal-body h5 {
+    margin-left: 30px;
+}
 @media (max-width: 768px) {
     .contact-container {
         width: 80%;

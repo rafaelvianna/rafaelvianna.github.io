@@ -72,7 +72,6 @@
 	<div class="portfolio-div" id='cases'>
 		<div class="portfolio">
 			<div class="no-padding portfolio_container">
-				<!-- Leap Ui -->
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<span class="portfolio_item">
 						<span data-toggle="modal" data-target="#train">
@@ -131,9 +130,7 @@
 						</div>
 					</span>
 				</div>
-				<!-- end Leap Ui -->
 
-				<!-- Leap Wireframe -->
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<span class="portfolio_item">
 						<span data-toggle="modal" data-target="#travel">
@@ -181,9 +178,7 @@
 						</div>
 					</span>
 				</div>
-				<!-- end Leap Wireframe -->
 
-				<!-- Engvid ui -->
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<span class="portfolio_item">
 						<span data-toggle="modal" data-target="#photo">
@@ -237,9 +232,7 @@
 						</div>
 					</span>
 				</div>
-				<!-- end Engvid ui -->
 
-				<!-- Engvid Wireframe -->
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<span class="portfolio_item">
 						<span data-toggle="modal" data-target="#agency">
@@ -287,9 +280,7 @@
 						</div>
 					</span>
 				</div>
-				<!-- end Engvid Wireframe -->
 
-				<!--  Medical Center -->
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<span class="portfolio_item">
 						<span data-toggle="modal" data-target="#business">
@@ -338,9 +329,7 @@
 						</div>
 					</span>
 				</div>
-				<!-- end Medical Center -->
 
-				<!-- Som Brasil -->
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<span class="portfolio_item">
 						<span data-toggle="modal" data-target="#meeting">
@@ -388,7 +377,6 @@
 						</div>
 					</span>
 				</div>
-				<!-- end Som Brasil -->
 			</div>
 		</div>
 	</div>
@@ -598,7 +586,6 @@
 	<script src='js/slick.min.js'></script>
 
 	<script>  
-
 		if ($(window).width() < 769) {
 			$('.carousel').slick({
 				dots: true,
@@ -606,8 +593,8 @@
 				speed: 500,
 				slidesToShow: 1,
 				slidesToScroll: 1,
-				// autoplay:true,
-				// autoplaySpeed:3500,
+				autoplay:true,
+				autoplaySpeed:3500,
 				arrows:true,
 			});
 		} else {
@@ -617,8 +604,8 @@
 					speed: 500,
 					slidesToShow: 3,
 					slidesToScroll: 3,
-					// autoplay:true,
-					// autoplaySpeed:3500,
+					autoplay:true,
+					autoplaySpeed:3500,
 					arrows:true,
 			});
 		}
@@ -630,8 +617,6 @@
 		$('.portfolio_item').click(function(){
 			$(this).addClass('active');
 		});
-
-		
   </script>
 </body>
 
