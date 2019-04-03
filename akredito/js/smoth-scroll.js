@@ -2,7 +2,7 @@ $(document).ready(function(){
   var offsetSize = $("nav").innerHeight();
 
   if (location.hash === '#simulation') {
-    $(document).scrollTop( $("#menu-simulation").offset().top - 160 )
+    $(document).scrollTop( $("#menu-simulation").offset().top - 140 )
   } else {
     $(document).scrollTop( $("#menu-simulation").offset().top - 100 )
   }
