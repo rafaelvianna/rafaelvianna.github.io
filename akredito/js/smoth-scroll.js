@@ -1,4 +1,14 @@
 $(document).ready(function(){
+  var offsetSize = $("nav").innerHeight();
+
+  if (location.hash === '#simulation') {
+    $(document).scrollTop( $("#menu-simulation").offset().top - 160 )
+  } else {
+    $(document).scrollTop( $("#menu-simulation").offset().top - 100 )
+  }
+})
+
+$(document).ready(function(){
   $('#menu-how-works').on('click', function() {
     var anchorLink = $('#how-works');
     var offsetSize = $("nav").innerHeight();
@@ -28,5 +38,4 @@ $(document).ready(function(){
     var offsetSize = $("nav").innerHeight();
     $("html, body").animate({scrollTop: anchorLink.offset().top - offsetSize }, 500);
   })
-  
 }); 
