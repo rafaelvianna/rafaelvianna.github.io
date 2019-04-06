@@ -80,12 +80,12 @@ function inputRange2() {
 
         if ($rangeInput.val() == 1 ) {
           calculaValor(initialValue, 1);
-          return `${$rangeInput.val()} Parcela`
+          return `${$rangeInput.val()} parcela`
         }
 
         calculaValor(initialValue, qtdPortion);
 
-        return `${$rangeInput.val()} Parcelas`
+        return `${$rangeInput.val()} parcelas`
       });
     });
 }
