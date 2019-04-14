@@ -178,3 +178,23 @@ $('.step4-back').click(function(e){
 	$('.fourth').removeClass('active');
 	$('.second').removeClass('active');
 });
+
+$('.finish-register').click(function(e) {
+	e.preventDefault();
+	$('.modal-create-account').addClass('active');
+	$('body').addClass('login-active');
+
+});
+
+$('.confirm-new-account').click(function(e){
+	e.preventDefault();
+	$('.modal-create-account').removeClass('active');
+	$('.modal-create-account-fail').addClass('active');
+	$('body').addClass('login-active');
+});
+
+$('.confirm-new-account-fail').click(function(e) {
+	e.preventDefault();
+	$('.modal-create-account-fail').removeClass('active');
+	$('body').removeClass('login-active');
+});

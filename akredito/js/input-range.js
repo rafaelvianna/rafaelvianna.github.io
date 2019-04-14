@@ -2,10 +2,10 @@ let initialValue = 1000;
 let qtdPortion = 1;
 
 function calculaValor(divida, parcelas) {
-    let final = (0.055*((divida*0.25)*1.1)) / (1-(1+0.055)**-parcelas)
+    let final = (0.055*((divida*0.3)*1.1)) / (1-(1+0.055)**-parcelas)
 
     $('.final-value').text(function() {
-      return `R$ ${final.toFixed(2)}`
+      return `R$ ${Math.round(final)},00`
     });
 }
 
@@ -55,7 +55,7 @@ function inputRange2() {
 
     var getTrackStyle = function (el) {  
     var curVal = el.value,
-        val = (curVal - 1) * 8.666666667,
+        val = (curVal - 1) * 5.666666667,
         style = '';
         
     var curLabel = $('.range-labels').find('li:nth-child(' + curVal + ')');
@@ -80,12 +80,12 @@ function inputRange2() {
 
         if ($rangeInput.val() == 1 ) {
           calculaValor(initialValue, 1);
-          return `${$rangeInput.val()} parcela`
+          return `${$rangeInput.val()} Parcela`
         }
 
         calculaValor(initialValue, qtdPortion);
 
-        return `${$rangeInput.val()} parcelas`
+        return `${$rangeInput.val()} Parcelas`
       });
     });
 }

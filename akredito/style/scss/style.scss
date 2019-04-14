@@ -333,6 +333,12 @@ nav {
 		color: $white;
 	}
 
+	.subtitle-simulation {
+		text-align: center;
+		color: $white;
+		display: block;
+	}
+
 	p {
 		text-align: center;
     margin-bottom: 50px;
@@ -721,9 +727,8 @@ footer {
 	}
 }
 
-
-
-.box-login {
+.box-login,
+.box-recover-password {
 	position: fixed;
 	z-index: 99;
 	background: rgba(0,0,0,.8);
@@ -732,6 +737,7 @@ footer {
 	display: none;
 	justify-content: center;
 	align-items: center;
+	top: 0;
 
 	&.active {
 		display: flex;
@@ -756,8 +762,6 @@ footer {
 			height: 200px;
 			background-repeat: no-repeat;
 			position: absolute;
-			top: -60px;
-			left: -100px;
 			top: -70px;
 			left: -90px;
 			background-size: 180px;
@@ -850,6 +854,14 @@ footer {
 	}
 }
 
+.box-recover-password {
+	> div {
+		h3 {
+			width: 155px;
+		}
+	}
+}
+
 @mixin rangeThumb {
   width: 18px;
   height: 18px;
@@ -870,7 +882,6 @@ footer {
 
 .range {
   position: relative;
-  // width: 550px;
   height: 5px;
 }
 
@@ -1188,6 +1199,267 @@ footer {
 			margin: 0;
 		}
 	}
+
+	.modal-correct {
+		position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+    align-items: center;
+		justify-content: center;
+		
+		&.active {
+			display: flex;
+		}
+
+		div {
+			display: flex;
+			flex-direction: column;
+			background: #ffffff;
+			padding: 20px 50px 40px;
+			box-sizing: border-box;
+			border-radius: 5px;
+			position: relative;
+			overflow: hidden;
+			text-align: center;
+
+			&:before {
+				content: '';
+				display: block;
+				background-image: url(../../img/elipse.png);
+				width: 200px;
+				height: 200px;
+				background-repeat: no-repeat;
+				position: absolute;
+				top: -70px;
+				left: -70px;
+				background-size: 180px;
+			}
+
+			&:after {
+		    content: '';
+				width: 50px;
+				height: 50px;
+				display: block;
+				position: absolute;
+				left: 20px;
+				top: 20px;
+				background-image: url(../../img/check.png);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			h3 {
+				border-bottom: 3px solid #a8cf45;
+				padding-bottom: 10px;
+				width: 85px;
+				text-align: center;
+				margin: 30px auto;
+			}
+
+			p {
+				width: 400px;
+				margin: 10px auto 50px;
+			}
+
+			a {
+				color: #a8cf45;
+				text-decoration: none;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				img {
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+}
+
+.modal-create-account {
+	position: fixed;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.8);
+	left: 0;
+	top: 0;
+	z-index: 99;
+	flex-direction: column;
+
+	&.active {
+		display: flex;
+	}
+
+	> div {
+		background: $white;
+		width: 400px;
+		padding: 20px;
+		text-align: center;
+		overflow: hidden;
+		position: relative;
+		border-radius: 5px;
+
+		@media screen and (max-width: 414px) {
+			width: 90%;
+		}
+
+		h3 {
+			margin: 25px 0;
+
+			&:after {
+				content: '';
+				width: 50px;
+				height: 2px;
+				background: $green;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+
+		p {
+			margin-bottom: 35px;
+			line-height: 25px;
+		}
+
+		a {
+			font-weight: 600;
+			color: $green;
+			position: relative;
+			margin-bottom: 25px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			img {
+				margin-left: 10px;
+			}
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			background-image: url(../../img/elipse.png);
+			width: 200px;
+			height: 200px;
+			background-repeat: no-repeat;
+			position: absolute;
+			top: -70px;
+			left: -70px;
+			background-size: 180px;
+		}
+
+		&:after {
+			content: '';
+			width: 50px;
+			height: 50px;
+			display: block;
+			position: absolute;
+			left: 20px;
+			top: 20px;
+			background-image: url(../../img/check.png);
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}	
+}
+
+.modal-create-account-fail {
+	position: fixed;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.8);
+	left: 0;
+	top: 0;
+	z-index: 99;
+	flex-direction: column;
+
+	&.active {
+		display: flex;
+	}
+
+	> div {
+		background: $white;
+		width: 600px;
+		padding: 20px;
+		text-align: center;
+		overflow: hidden;
+		position: relative;
+		border-radius: 5px;
+
+		@media screen and (max-width: 414px) {
+			width: 90%;
+		}
+
+		h3 {
+			margin: 25px 0;
+
+			&:after {
+				content: '';
+				width: 50px;
+				height: 2px;
+				background: #d95549;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+
+		p {
+			line-height: 25px;
+			width: 80%;
+			margin: 35px auto;
+		}
+
+		a {
+			font-weight: 600;
+			color: #d95549;
+			position: relative;
+			margin-bottom: 25px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			img {
+				margin-left: 10px;
+			}
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			background-image: url(../../img/elipse-wrong.png);
+			width: 200px;
+			height: 200px;
+			background-repeat: no-repeat;
+			position: absolute;
+			top: -70px;
+			left: -70px;
+			background-size: 180px;
+		}
+
+		&:after {
+			content: '';
+			width: 50px;
+			height: 50px;
+			display: block;
+			position: absolute;
+			left: 20px;
+			top: 20px;
+			background-image: url(../../img/wrong-register.png);
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
 }
 
 @media screen and (max-width: 1199px) {
@@ -1482,92 +1754,6 @@ footer {
 
 				.checkbox {
 					margin: 0;
-				}
-			}
-		}
-
-		.modal-create-account {
-			position: fixed;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 100%;
-			height: 100%;
-			background: rgba(0,0,0,.8);
-			left: 0;
-			top: 0;
-			z-index: 99;
-			flex-direction: column;
-
-			> div {
-				background: $white;
-				width: 400px;
-				padding: 20px;
-				text-align: center;
-				overflow: hidden;
-				position: relative;
-				border-radius: 5px;
-
-				h3 {
-					margin: 25px 0;
-
-					&:after {
-						content: '';
-						width: 50px;
-						height: 2px;
-						background: $green;
-						display: block;
-						margin: 0 auto;
-					}
-				}
-
-				p {
-					margin-bottom: 35px;
-					line-height: 25px;
-				}
-
-				a {
-					font-weight: 600;
-					color: $green;
-					position: relative;
-					margin-left: -20px;
-					margin-bottom: 25px;
-					display: inline-block;
-
-					&:after {
-						content: '';
-						display: block;
-						width: 10px;
-						height: 20px;
-						background-image:url('../../img/arrow.png');
-						background-repeat: no-repeat;
-						position: absolute;
-						top: 3px;
-    				right: -20px;
-					}
-				}
-
-				&:before {
-					content: '';
-					width: 200px;
-					height: 200px;
-					display: block;
-					left: -110px;
-					top: -100px;
-					border-radius: 50%;
-					position: absolute;
-				}
-			}
-
-			&.modal-correct {
-				> div {
-					&:before {
-						background-color: #d3e7a2;
-						background-image: url('../../img/check.png');
-						background-repeat: no-repeat;
-						background-position: 131px 125px;
-						background-size: 30px;
-					}
 				}
 			}
 		}

@@ -35,9 +35,17 @@ $('.login').click(function(e) {
   $('body').addClass('login-active');
 });
 
+$('.forgot-password').click(function(e) {
+  e.preventDefault();
+  $('.box-login').removeClass('active');
+  $('.box-recover-password').addClass('active');
+  $('body').addClass('login-active');
+});
+
 $('.close-login').click(function(e) {
   e.preventDefault();
   $('.box-login').removeClass('active');
+  $('.box-recover-password').removeClass('active');
   $('body').removeClass('login-active');
 });
 
