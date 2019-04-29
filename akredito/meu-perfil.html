@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Akredito</title>
+  <link rel="stylesheet" href="style/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="style/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
+
+<body class="create-account">
+  <nav class='client-area-menu'>
+    <div class="container">
+      <h1><a href="index.html"><img src="img/logo.png" alt="Logotipo Akredito"></a></h1>
+      <ul>
+        <li><a href="#">Área do Cliente</a></li>
+        <li><a href="#">Atendimento</a></li>
+        <li><a href="#">Blog</a></li>
+        <li class='profile-image'>
+          <a href="primeiro-acesso.html">
+            <img src='https://vignette.wikia.nocookie.net/gameofthrones/images/a/af/Jon_Snow_Perfil_707.png/revision/latest?cb=20170828184959&path-prefix=pt-br' alt='profile image' />
+          </a>
+          <span class='js-submenu-link'>John Snow</span>
+
+          <div class='js-submenu'>
+            <ul>
+              <li>
+                <a href="meu-perfil.html">Ver Perfil</a>
+                <a href="index.html">Sair</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="box-login">
+    <div>
+      <h3>Login</h3>
+      <span class='close-login'>
+        <img src="img/close.png">
+      </span>
+      <form>
+        <label>CPF:</label>
+        <div class="input-container">
+          <input type="text" class='input-cpf cpf-mask' placeholder="000.000.000-00">
+          <img class='check-cpf' src="img/check-cpf.png" alt="">
+        </div>
+
+        <div class="input-container">
+          <label class='password'>Senha:</label>
+          <input class='input-password' type="password" placeholder="********">
+          <a href='' class='forgot-password'>Esqueci minha senha</a>
+          <img class='icon-input icon-password' src='img/eye.png'>
+        </div>
+
+
+        <button class='btn-login'>Entrar</button>
+        <small>Não tem cadastro? <a href="">Clique aqui</a></small>
+      </form>
+    </div>
+  </div>
+
+  <div class="box-recover-password">
+    <div>
+      <h3>Recuperar senha</h3>
+      <span class='close-login'>
+        <img src="img/close.png">
+      </span>
+      <form>
+        <label>Email Cadastrado:</label>
+        <div class="input-container">
+          <input type="text" placeholder="Digite seu email cadastrado">
+        </div>
+
+        <button class='btn-login'>Recuperar Senha</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-create-account">
+    <div>
+      <h3>Sucesso!</h3>
+      <p>Seu cadastro foi criado com sucesso.<br/> Aguarde! Em breve nossa equipe enviará as propostas para deixar seu nome limpo. </p>
+      <a href="#" class='confirm-new-account'>Ir para a área do cliente <img src="img/arrow.png"></a>
+    </div>
+  </div>
+
+  <div class="modal-create-account-fail">
+    <div>
+      <h3>Ih... Foi mal.</h3>
+      <p>
+        Infelizmente só atendemos clientes com o nome sujo no SPC, Serasa, ou Boa Vista SCPC. Além disso, não atendemos clientes com cheque sem fundo e/ou protesto em cartório.
+        <br/><br/>
+        Caso tenha preenchido equivocadamente, favor entrar em contato com a nossa equipe.
+      </p>
+      <a href="primeiro_acesso.html" class='confirm-new-account-fail'>Ir para a página de Dúvidas <img src="img/arrow-wrong.png"></a>
+    </div>
+  </div>
+
+  <div class="client-area">
+    <div class="container">
+      <h2>Olá, John!</h2>
+
+      <div class="my-profile">
+        <p>Abaixo você encontra as inforamções fornecidas no seu cadastro:</p>
+        <form>
+          <div class='form-row-container'>
+            <div class='complete-name w-40'>
+              <label>Qual seu nome completo?</label>
+              <input type="text" placeholder="John Knows Nothing Snow">
+            </div>
+
+            <div class='input-with-image w-28'>
+              <label>E o seu CPF?</label>
+              <input type="text" class='register-cpf input-cpf cpf-mask' placeholder="000.000.000-00">
+              <img src="img/wrong.png">
+            </div>
+
+            <div class='w-28'>
+              <label>Qual seu WhastApp?</label>
+              <input type="text" placeholder="(00) 00000-0000">
+            </div>
+          </div>
+
+          <div class='form-row-container'>
+            <div class='w-40'>
+              <label>Qual seu e-mail?</label>
+              <input type="text" placeholder="email@hotmail.com">
+            </div>
+
+            <div class='w-28'>
+              <label>Telefone para contato:</label>
+              <input type="text" placeholder="(00) 00000-0000">
+            </div>
+  
+            <div class='input-with-image w-28'>
+              <label>Crie uma senha</label>
+              <input class="register-input-password" type="password" placeholder="********">
+              <img class="register-password" src="img/eye.png">
+            </div>
+          </div>
+  
+          <div class='form-row-container'>
+            <div class='dirty-name'>
+              <label>Você está com o nome sujo?</label>
+              <span class='custom-button'>
+                <button class='yes'>Sim</button>
+                <button class='no'>Não</button>
+                <button class='dont-know active'>Não sei</button>
+              </span>
+            </div>
+
+            <div class='bad-check space-between'>
+              <label>Você tem cheque sem fundo?</label>
+              <span class='custom-button'>
+                <button class='yes'>Sim</button>
+                <button class='no'>Não</button>
+                <button class='dont-know active'>Não sei</button>
+              </span>
+            </div>
+
+            <div class='registry'>
+              <label>Você tem protesto em cartório?</label>
+              <span class='custom-button'>
+                <button class='yes'>Sim</button>
+                <button class='no'>Não</button>
+                <button class='dont-know active'>Não sei</button>
+              </span>
+            </div>
+          </div>
+
+          <div class='form-row-container'>
+            <div class='complete-name w-28'>
+              <label>Data de nascimento:</label>
+              <input type="date">
+            </div>
+
+            <div class='input-with-image w-18'>
+              <label>Sexo:</label>
+              <span class='custom-button gender'>
+                <button class='woman active'>Feminino</button>
+                <button class='man'>Masculino</button>
+              </span>
+            </div>
+
+            <div class='w-50'>
+              <label>Qual nome da sua mãe?</label>
+              <input type="text" placeholder="Nome completo">
+            </div>
+          </div>
+
+          <div class='form-row-container'>
+            <div>
+              <label>Estado civil:</label>
+              <select>
+                <option value="solteiro">Solteiro</option>
+                <option value="casado">Casado</option>
+                <option value="viuvo">Viuvo</option>
+                <option value="divorciado">Divorciado</option>
+              </select>
+            </div>
+  
+            <div class='space-between'>
+              <label>Nível de escolaridade:</label>
+              <select>
+                <option value="fundamental">Ensino Fundamental Incompleto</option>
+                <option value="casado">Ensino Fundamental completo</option>
+              </select>
+            </div>
+  
+            <div>
+              <label>Situação de trabalho:</label>
+              <select>
+                <option value="fundamental">Trabalhando</option>
+                <option value="casado">Desempregado</option>
+              </select>
+            </div>
+          </div>
+  
+          <div class='form-row-container'>
+            <div>
+              <label>Qual dia do seu pagamento?</label>
+              <select>
+                <option value="solteiro">01 / 05</option>
+                <option value="casado">05 / 10</option>
+              </select>
+            </div>
+
+            <div class='space-between'>
+              <label>Quanto você recebe por mês?</label>
+              <input type="text" placeholder="RS 00,00">
+            </div>
+
+            <div>
+              <label>Por mês, você e sua família ganham:</label>
+              <input type="text" placeholder="RS 00,00">
+            </div>
+          </div>
+
+          <div class='form-row-container'>
+            <div class='w-28'>
+              <label>CEP:</label>
+              <input type="text" placeholder="00.000-000">
+            </div>
+
+            <div class='adress w-40'>
+              <label>Endereço:</label>
+              <input type="text" placeholder="Nome da rua, Bairro">
+            </div>
+
+            <div class='w-28'>
+              <label>Número:</label>
+              <input type="text" placeholder="00.000-000">
+            </div>
+          </div>
+  
+          <div class='form-row-container'>
+            <div class='state w-24'>
+              <label>Estado:</label>
+              <select>
+                <option value="rj">Rio de Janeiro</option>
+              </select>
+            </div>
+
+            <div class='city w-24'>
+              <label>Cidade:</label>
+              <select>
+                <option value="rj">Rio de Janeiro</option>
+              </select>
+            </div>
+
+            <div class='city w-24'>
+              <label>Bairro:</label>
+              <select>
+                <option value="centro">Centro</option>
+              </select>
+            </div>
+
+            <div class='complement w-24'>
+              <label>Complemento:</label>
+              <input type="text" placeholder="Apartamento, casa, vila, etc.">
+            </div> 
+          </div>
+
+          <div class='form-row-container'>
+            <div class='left'>
+              <div class='left-container'>
+                <div class='clean-name'>
+                  <label>Porquê quer ter o nome limpo?</label>
+                  <select>
+                    <option value="rj">Rio de Janeiro</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label>Parcela compras de mercado ou farmácia?</label>
+                  <span class='custom-button portion'>
+                    <button class='yes'>Sim</button>
+                    <button class='no active'>Não</button>
+                  </span>
+                </div>
+              </div>
+
+              <div class="left-container">
+                <div>
+                  <label>Melhor data para pagamento do boleto:</label>
+                  <input type="date">
+                </div>
+      
+                <div>
+                  <label>Como conheceu a Akredito?</label>
+                  <select class='how-meet'>
+                    <option value="rj">Rio de Janeiro</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class='right-container'>
+              <img src="data:image/jpeg;base64,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" alt="">
+            </div>
+          </div>
+
+          <div class="form-row-container">
+            <div class='reason'>
+              <div>
+                <label>Por qual motivo você não conseguiu pagar suas contas? E por que vai conseguir pagar agora?</label>
+                <textarea cols="30" rows="10"></textarea>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class='treatment'>
+          <p>Caso você precise alterar alguma informação, entre em contato conosco.</p>
+          <a href='duvidas.html' class='btn-outline '>Ir para Atendimento</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <footer>
+    <span><a href="index.html"><img src="img/linha2.png" alt=""></a></span>
+    <div class="container">
+      <div class='footer-social'>
+        <div>
+          <a href="index.html">
+            <img src="img/logo.png" alt="">
+          </a>
+        </div>
+
+        <div class='copyright'>
+          <img src="img/footer1.png" alt="">
+          <small>2019. Todos os direitos reservados.</small>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src='js/jquery.js'></script>
+  <script src='js/smoth-scroll.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js'></script>
+  <script src="js/mask-cpf.js"></script>
+  <script src='js/register.js'></script>
+  <script src='js/main.js'></script>
+  <script src='js/client-area.js'></script>
+</body>
+
+</html>

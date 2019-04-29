@@ -344,7 +344,7 @@ nav {
     margin-bottom: 50px;
 	}
 
-	video {
+	iframe {
 		border-radius: 5px;
 		margin: 0 auto 60px;
 		display: block;
@@ -697,6 +697,7 @@ footer {
 				border: none;
 				border-radius: 3px;
 				height: 60px;
+				padding: 10px;
 			}
 
 			button {
@@ -1462,6 +1463,449 @@ footer {
 	}
 }
 
+.client-area-menu {
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px 0;
+	}
+
+	ul {
+		display: flex;
+		align-items: center;
+
+		// @media screen and (max-width: 600px) {
+		// 	flex-direction: column;
+		// 	position: fixed;
+		// 	top: 0px;
+		// 	background: rgba(0,0,0,.8);
+		// 	width: 100%;
+		// 	height: 100vh;
+		// 	display: flex;
+		// 	padding-top: 100px;
+		// }
+
+		li {
+			margin-left: 30px;
+			
+			// @media screen and (max-width: 600px) {
+			// 	margin: 0 0 40px 0;
+
+			// 	a,
+			// 	span {
+			// 		color: #ffffff;
+			// 	}
+			// }
+
+			img {
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+			}
+
+			&.profile-image {
+				display: flex;
+				align-items: center;
+				position: relative;
+
+				// @media screen and (max-width: 600px) {
+				// 	margin-bottom: 0;
+
+				// 	div {
+				// 		position: absolute;
+				// 		top: 30px !important;
+				// 		left: -20px;
+				// 	}
+
+				// 	ul {
+				// 		position: initial;
+				// 		background: none;
+				// 		height: auto;
+				// 		padding: 0;
+
+				// 		li {
+				// 			margin: 0;
+				// 		}
+
+				// 		a {
+				// 			color: #000;
+				// 		}
+				// 	}
+				// }
+
+				img {
+					margin-right: 10px;
+					
+					@media screen and (max-width: 600px) {
+						display: none;
+					}	
+				}
+
+				> span {
+					background-image: url('../../img/arrow-down.png');
+					background-repeat: no-repeat;
+					background-position: 85px center;
+					padding: 0 20px 0 0;
+					cursor: pointer;
+				}
+
+				> div {
+					position: absolute;
+					right: 0;
+					top: 64px;
+					text-align: center;
+					background: white;
+					width: 130px;
+					padding: 10px 0;
+					border: 2px solid #e7e6ed;
+					border-radius: 0 0 3px 3px;
+					display: none;
+
+					&.active {
+						display: block;
+					}
+
+					a {
+						display: block;
+						margin: 10px 0 20px;
+						
+						&:hover {
+							color: $green;
+						}
+
+						&:last-of-type {
+							margin-bottom: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.client-area {
+	margin: 150px 50px 120px 50px;
+
+	@media screen and (max-width: 600px) {
+		margin: 150px 0px 120px 0px;
+	}
+
+	.content-nav {
+		display: flex;
+		justify-content: space-between;
+		margin: 10px 0;
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
+
+		.active {
+			background: $green;
+			color: #ffffff;
+		}
+
+		li {
+			background: #ffffff;
+			display: flex;
+			height: 70px;
+			width: 32%;
+			align-items: center;
+			justify-content: center;
+			font-weight: 900;
+			cursor: pointer;
+
+			@media screen and (max-width: 768px) {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+
+			&.debts {
+				background-image: url('../../img/welcom-bomb.png');
+				background-repeat: no-repeat;
+				background-position: 90px 15px;
+
+				@media screen and (max-width: 768px) {
+					background-image: none;
+				}
+
+				&.active {
+					background-image: url('../../img/welcom-bomb-active.png');
+
+					@media screen and (max-width: 768px) {
+						background-image: none;
+					}
+				}
+			}
+
+			&.payments {
+				background-image: url('../../img/welcome-hand.png');
+				background-repeat: no-repeat;
+				background-position: 40px 20px;
+
+				@media screen and (max-width: 768px) {
+					background-image: none;
+				}
+
+				&.active {
+					background-image: url('../../img/welcome-hand-active.png');
+
+					@media screen and (max-width: 768px) {
+						background-image: none;
+					}
+				}
+			}
+
+			&.proposal {
+				background-image: url('../../img/welcome-3.png');
+				background-repeat: no-repeat;
+				background-position: 70px 20px;
+
+				@media screen and (max-width: 768px) {
+					background-image: none;
+				}
+
+				&.active {
+					background-image: url('../../img/welcome-3-active.png');
+
+					@media screen and (max-width: 768px) {
+						background-image: none;
+					}
+				}
+			}
+		}
+	}
+
+	.my-profile {
+		background: #ffffff;
+		margin-top: 8px;
+		padding: 60px; 
+		border-radius: 5px;
+
+		@media screen and (max-width: 600px) {
+			padding: 10px;
+		}
+
+		> p {
+			margin-bottom: 50px;
+		}
+
+		.form-row-container {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 40px;
+
+			@media screen and (max-width: 768px) {
+				flex-direction: column;
+			}
+
+			> div {
+				width: 32%;
+				position: relative;
+
+				@media screen and (max-width: 768px) {
+					width: 100% !important;
+				}
+
+				&.w-50 {
+					width: 50%;
+				}
+
+				&.w-40 {
+					width: 40%;
+				}
+
+				&.w-28 {
+					width: 28%;
+				}
+
+				&.w-18 {
+					width: 18%;
+				}
+
+				&.w-24 {
+					width: 24%;
+				}
+			}
+
+			input {
+				background: #edecf5;
+				border: none;
+				width: 100%;
+				padding: 10px;
+				border-radius: 5px;
+				margin: 5px 0;
+			}
+
+			select {
+				background: #edecf5;
+				border: none;
+				width: 100%;
+				padding: 10px;
+				border-radius: 5px;
+				margin: 5px 0;
+			}
+
+			img {
+				position: absolute;
+				top: 32px;
+				right: 10px;
+			}
+
+			.custom-button {
+				display: flex;
+				justify-content: space-between;
+				background: #f2f1fa;
+				padding: 10px;
+				margin: 10px 0;
+				border-radius: 4px;
+
+				button {
+					outline: none;
+					background: none;
+					padding: 5px 10px;
+					border: none;
+					cursor: pointer;
+
+					&.active {
+						border: 1px solid #a8cf45;
+						border-radius: 4px;
+						color: #a8cf45;
+					}
+				}
+
+				&.gender {
+					margin: 5px 0;
+					padding: 6px 7px;
+				}
+			}
+
+			.left {
+				width: 65%;
+
+				.left-container {
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 40px;
+
+					> div {
+						width: 48%;
+					}
+
+					.portion {
+						padding: 5px;
+						margin: 5px 0;
+						width: 120px;
+					}
+				}
+
+				.how-meet {
+					margin: 5px 0;
+    			padding: 12px;
+				}
+			}
+
+			.reason {
+				width: 100%;
+
+				textarea {
+					background: #edecf5;
+					border: none;
+					width: 100%;
+					padding: 10px;
+					border-radius: 5px;
+					margin: 5px 0;
+				}
+			}
+			
+			.right-container {
+				img {
+					position: initial;
+					max-width: 260px;
+					width: 100%;
+					float: right;
+				}
+			}
+		}
+
+		.treatment {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+}
+
+.content-client-area {
+	background: #ffffff;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	height: 300px;
+	text-align: center;
+
+	@media screen and (max-width: 600px) {
+		height: 80%;
+		padding-bottom: 60px;
+	}
+
+	h3 {
+		margin: 50px auto 0;
+		position: relative;
+
+		&:after {
+			content: '';
+			width: 60px;
+			height: 2px;
+			background: $green;
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+		}
+
+		&.error {
+			&:after {
+				background: red;
+			}
+		}
+	}
+
+	p {
+		width: 45%;
+		margin: 30px auto 0;
+		line-height: 22px;
+
+		@media screen and (max-width: 768px) {
+			width: 80%;
+		}
+	}
+
+	> div {
+		display: none;
+
+		&.payments {
+			a {
+				margin-top: 45px;
+				display: inline-block;
+				padding: 0 20px;
+				background-repeat: no-repeat;
+				background-position: 120px center;
+
+				&.error {
+					color: #d9584c;
+					background-image: url('../../img/arrow-wrong.png');
+				}
+			}
+		}
+
+		&.active {
+			display: block;
+		}
+	}
+}
+
 @media screen and (max-width: 1199px) {
 	.body-fixed {
 		overflow: hidden;
@@ -1771,7 +2215,7 @@ footer {
 			top: 29%;
 		}
 
-		video {
+		iframe {
 			width: 100%;
 			margin: 0 auto 40px;
 		}
