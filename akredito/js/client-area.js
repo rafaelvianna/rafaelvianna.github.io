@@ -61,3 +61,16 @@ $('.js-no-accept').on('click', function() {
 $('.js-submenu-link').on('click', function() {
   $('.js-submenu').toggleClass('active');
 });
+
+$('.menu-open').on('click', function() {
+  $('.menu-close').show();
+  $('.menu-open').hide();
+  $('.client-area-menu-container').addClass('active');
+
+});
+
+$('.menu-close').on('click', function() {
+  $('.menu-open').show();
+  $('.menu-close').hide();
+  $('.client-area-menu-container').removeClass('active');
+});
