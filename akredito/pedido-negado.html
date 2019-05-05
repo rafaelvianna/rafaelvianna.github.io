@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Akredito</title>
+  <link rel="stylesheet" href="style/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="style/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
+
+<body class="create-account">
+  <nav class='client-area-menu'>
+    <div class="container">
+      <h1><a href="index.html"><img src="img/logo.png" alt="Logotipo Akredito"></a></h1>
+      <ul>
+        <li><a href="#">Área do Cliente</a></li>
+        <li><a href="#">Atendimento</a></li>
+        <li><a href="#">Blog</a></li>
+        <li class='profile-image'>
+          <a href="primeiro-acesso.html">
+            <img src='https://vignette.wikia.nocookie.net/gameofthrones/images/a/af/Jon_Snow_Perfil_707.png/revision/latest?cb=20170828184959&path-prefix=pt-br' alt='profile image' />
+          </a>
+          <span class='js-submenu-link'>John Snow</span>
+
+          <div class='js-submenu'>
+            <ul>
+              <li>
+                <a href="meu-perfil.html">Ver Perfil</a>
+                <a href="index.html">Sair</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="box-login">
+    <div>
+      <h3>Login</h3>
+      <span class='close-login'>
+        <img src="img/close.png">
+      </span>
+      <form>
+        <label>CPF:</label>
+        <div class="input-container">
+          <input type="text" class='input-cpf cpf-mask' placeholder="000.000.000-00">
+          <img class='check-cpf' src="img/check-cpf.png" alt="">
+        </div>
+
+        <div class="input-container">
+          <label class='password'>Senha:</label>
+          <input class='input-password' type="password" placeholder="********">
+          <a href='' class='forgot-password'>Esqueci minha senha</a>
+          <img class='icon-input icon-password' src='img/eye.png'>
+        </div>
+
+
+        <button class='btn-login'>Entrar</button>
+        <small>Não tem cadastro? <a href="">Clique aqui</a></small>
+      </form>
+    </div>
+  </div>
+
+  <div class="box-recover-password">
+    <div>
+      <h3>Recuperar senha</h3>
+      <span class='close-login'>
+        <img src="img/close.png">
+      </span>
+      <form>
+        <label>Email Cadastrado:</label>
+        <div class="input-container">
+          <input type="text" placeholder="Digite seu email cadastrado">
+        </div>
+
+        <button class='btn-login'>Recuperar Senha</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-create-account">
+    <div>
+      <h3>Sucesso!</h3>
+      <p>Seu cadastro foi criado com sucesso.<br/> Aguarde! Em breve nossa equipe enviará as propostas para deixar seu nome limpo. </p>
+      <a href="#" class='confirm-new-account'>Ir para a área do cliente <img src="img/arrow.png"></a>
+    </div>
+  </div>
+
+  <div class="modal-create-account-fail">
+    <div>
+      <h3>Ih... Foi mal.</h3>
+      <p>
+        Infelizmente só atendemos clientes com o nome sujo no SPC, Serasa, ou Boa Vista SCPC. Além disso, não atendemos clientes com cheque sem fundo e/ou protesto em cartório.
+        <br/><br/>
+        Caso tenha preenchido equivocadamente, favor entrar em contato com a nossa equipe.
+      </p>
+      <a href="primeiro_acesso.html" class='confirm-new-account-fail'>Ir para a página de Dúvidas <img src="img/arrow-wrong.png"></a>
+    </div>
+  </div>
+
+  <div class="client-area">
+    <div class="container">
+      <h2>Olá, John!</h2>
+
+      <div class='content-nav'>
+        <li class='debts disabled'>Minhas Dívidas</li>
+        <li class='payments disabled'>Parcelamento e Pagamento</li>
+        <li class='proposal disabled'>Proposta e Contrato</li>
+      </div>
+
+      <div class='content-client-area'>
+        <div class='requested-denied active'>
+          <h3 class='error'>Pedido Negado</h3>
+          <p>
+            Após a análise da nossa equipe, constatamos que não é possível criar uma proposta para você agora... Pedimos que aguarde 3 meses para tentar novamente, tudo bem?
+          </p>
+          <a href="#" class='js-proposal error'>Ir para atendimento</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <footer>
+    <span><a href="index.html"><img src="img/linha2.png" alt=""></a></span>
+    <div class="container">
+      <div class='footer-social'>
+        <div>
+          <a href="index.html">
+            <img src="img/logo.png" alt="">
+          </a>
+        </div>
+
+        <div class='copyright'>
+          <img src="img/footer1.png" alt="">
+          <small>2019. Todos os direitos reservados.</small>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src='js/jquery.js'></script>
+  <script src='js/smoth-scroll.js'></script>
+  <script src='js/main.js'></script>
+  <script src='js/client-area.js'></script>
+</body>
+
+</html>

@@ -117,35 +117,35 @@
             <div>
               <div class='complete-name'>
                 <label>Qual seu nome completo?</label>
-                <input type="text" placeholder="John Knows Nothing Snow">
+                <input id='complete-name' type="text" required placeholder="John Knows Nothing Snow">
               </div>
   
               <div class='space-between input-with-image'>
                 <label>E o seu CPF?</label>
-                <input type="text" class='register-cpf input-cpf cpf-mask' placeholder="000.000.000-00">
-                <img src="img/wrong.png">
+                <input id='cpf' type="text" class='register-cpf input-cpf cpf-mask' placeholder="000.000.000-00">
+                <!-- <img src="img/wrong.png"> -->
               </div>
   
               <div>
                 <label>Qual seu WhastApp?</label>
-                <input type="text" placeholder="(00) 00000-0000">
+                <input id='cellphone' type="text" class='phone' placeholder="(00) 00000-0000">
               </div>
             </div>
   
             <div>
               <div>
                 <label>Telefone para contato:</label>
-                <input type="text" placeholder="(00) 00000-0000">
+                <input id='phone' type="text" class='phone' placeholder="(00) 00000-0000">
               </div>
   
               <div class='space-between'>
                 <label>Qual seu e-mail?</label>
-                <input type="text" placeholder="email@hotmail.com">
+                <input id='email' type="email" placeholder="email@hotmail.com">
               </div>
   
               <div class='input-with-image'>
                 <label>Crie uma senha</label>
-                <input class="register-input-password" type="password" placeholder="********">
+                <input id='password' class="register-input-password" type="password" placeholder="********">
                 <img class="register-password" src="img/eye.png">
               </div>
             </div>
@@ -215,8 +215,8 @@
                 <select>
                   <option value="solteiro">Solteiro</option>
                   <option value="casado">Casado</option>
-                  <option value="viuvo">Viuvo</option>
                   <option value="divorciado">Divorciado</option>
+                  <option value="viuvo">Viúvo</option>
                 </select>
               </div>
   
@@ -266,18 +266,18 @@
           <form>
             <div>
               <div>
-                <label>CEP:</label>
-                <input type="text" placeholder="00.000-000">
+                <label for="cep">CEP:</label>
+                <input id="cep" type="text" required placeholder="Digite seu CEP">
               </div>
   
               <div class='adress'>
-                <label>Endereço:</label>
-                <input type="text" placeholder="Nome da rua, Bairro">
+                <label for="logradouro">Endereço:</label>
+                <input id="logradouro" type="text" required placeholder="Nome da rua, Bairro">
               </div>
   
               <div>
                 <label>Número:</label>
-                <input type="text" placeholder="00.000-000">
+                <input type="text" placeholder="Digite o número da sua residência">
               </div>
             </div>
   
@@ -289,16 +289,40 @@
   
               <div class='state'>
                 <label>Estado:</label>
-                <select>
-                  <option value="rj">Rio de Janeiro</option>
+                <select id="uf">
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
                 </select>
               </div>
   
               <div class='city'>
-                <label>Cidade:</label>
-                <select>
-                  <option value="rj">Rio de Janeiro</option>
-                </select>
+                <label for="bairro">Cidade:</label>
+                <input id="bairro" type="text" required placeholder="Digite sua cidade">
               </div>
             </div>
   

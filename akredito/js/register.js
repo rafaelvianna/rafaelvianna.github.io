@@ -103,15 +103,27 @@ $('.portion .no').click(function(e){
 
 $('.finish-first-step').click(function(e){
 	e.preventDefault();
-	$('.first-step').removeClass('active');
-	$('.third-step').removeClass('active');
-	$('.fourth-step').removeClass('active');
-	$('.second-step').addClass('active');
+	const completeName = $('#complete-name').val() == '';
+	const cpf = $('#cpf').val() == '';
+	const cellphone = $('#cellphone').val() == '';
+	const phone = $('#phone').val() == '';
+	const email = $('#email').val() == '';
+	const empasswordail = $('#password').val() == '';
 
-	$('.first').removeClass('active');
-	$('.third').removeClass('active');
-	$('.fourth').removeClass('active');
-	$('.second').addClass('active');
+	if (completeName && cpf && cellphone && phone && email && empasswordail) {
+		$('#complete-name').addClass('error');
+		$('#cpf').addClass('error');
+	} else {
+		$('.first-step').removeClass('active');
+		$('.third-step').removeClass('active');
+		$('.fourth-step').removeClass('active');
+		$('.second-step').addClass('active');
+
+		$('.first').removeClass('active');
+		$('.third').removeClass('active');
+		$('.fourth').removeClass('active');
+		$('.second').addClass('active');
+	}
 });
 
 $('.finish-second-step').click(function(e){
@@ -198,3 +210,38 @@ $('.confirm-new-account-fail').click(function(e) {
 	$('.modal-create-account-fail').removeClass('active');
 	$('body').removeClass('login-active');
 });
+
+$("#cep").focusout(function(){
+	$.ajax({
+		url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
+		dataType: 'json',
+
+		success: function(resposta){
+			$("#logradouro").val(resposta.logradouro);
+			$("#complemento").val(resposta.complemento);
+			$("#bairro").val(resposta.bairro);
+			$("#cidade").val(resposta.localidade);
+			$("#uf").val(resposta.uf);
+			$("#numero").focus();
+		}
+	});
+});
+
+$(".phone")
+.mask("(99) 9999-99999")
+.focusout(function (event) {  
+		var target, phone, element;  
+		target = (event.currentTarget) ? event.currentTarget : event.srcElement;  
+		phone = target.value.replace(/\D/g, '');
+		element = $(target);  
+		element.unmask();  
+		if(phone.length > 10) {  
+				element.mask("(99) 99999-9999");  
+		} else {  
+				element.mask("(99) 9999-9999");  
+		}  
+});
+
+$('#complete-name').on('change', function() {
+	$('#complete-name').removeClass('error');
+})
