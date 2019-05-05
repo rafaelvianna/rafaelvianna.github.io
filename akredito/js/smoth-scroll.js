@@ -1,15 +1,3 @@
-// if ($( document ).width() > 1199) {
-//   $(document).ready(function(){
-//     var offsetSize = $("nav").innerHeight();
-  
-//     // if (location.hash === '#simulation') {
-//     //   $(document).scrollTop( $("#menu-simulation").offset().top - 20 )
-//     // } else {
-//     //   $(document).scrollTop( $("#menu-simulation").offset().top - 100 )
-//     // }
-//   });
-// }
-
 $(document).ready(function(){
   var offsetSize = $("nav").innerHeight();
 
