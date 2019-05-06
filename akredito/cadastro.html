@@ -40,13 +40,13 @@
       <form>
         <label>CPF:</label>
         <div class="input-container">
-          <input type="text" class='input-cpf cpf-mask' placeholder="000.000.000-00">
+          <input required type="text" class='input-cpf cpf-mask' placeholder="000.000.000-00">
           <img class='check-cpf' src="img/check-cpf.png" alt="">
         </div>
 
         <div class="input-container">
           <label class='password'>Senha:</label>
-          <input class='input-password' type="password" placeholder="********">
+          <input required class='input-password' type="password" placeholder="********">
           <a href='' class='forgot-password'>Esqueci minha senha</a>
           <img class='icon-input icon-password' src='img/eye.png'>
         </div>
@@ -67,7 +67,7 @@
       <form>
         <label>Email Cadastrado:</label>
         <div class="input-container">
-          <input type="text" placeholder="Digite seu email cadastrado">
+          <input required type="text" placeholder="Digite seu email cadastrado">
         </div>
 
         <button class='btn-login'>Recuperar Senha</button>
@@ -79,19 +79,19 @@
     <div>
       <h3>Sucesso!</h3>
       <p>Seu cadastro foi criado com sucesso.<br/> Aguarde! Em breve nossa equipe enviará as propostas para deixar seu nome limpo. </p>
-      <a href="#" class='confirm-new-account'>Ir para a área do cliente <img src="img/arrow.png"></a>
+      <a href="primeiro-acesso.html" class='confirm-new-account'>Ir para a área do cliente <img src="img/arrow.png"></a>
     </div>
   </div>
 
   <div class="modal-create-account-fail">
     <div>
-      <h3>Ih... Foi mal.</h3>
+      <h3>Ops...</h3>
       <p>
-        Infelizmente só atendemos clientes com o nome sujo no SPC, Serasa, ou Boa Vista SCPC. Além disso, não atendemos clientes com cheque sem fundo e/ou protesto em cartório.
+        Infelizmente só atendemos clientes com o nome sujo nos órgãos de proteção ao crédito. Além disso, não atendemos clientes com cheque sem fundo e/ou protesto em cartório.
         <br/><br/>
         Caso tenha preenchido equivocadamente, favor entrar em contato com a nossa equipe.
       </p>
-      <a href="primeiro-acesso.html" class='confirm-new-account-fail'>Ir para a página de Dúvidas <img src="img/arrow-wrong.png"></a>
+      <a href="duvidas.html" class='confirm-new-account-fail'>Ir para a página de Dúvidas <img src="img/arrow-wrong.png"></a>
     </div>
   </div>
 
@@ -113,46 +113,46 @@
             <p>Nâo se preocupe, todas as suas informações estão seguras!</p>
           </div>
   
-          <form>
+          <form class='form-step-1'>
             <div>
               <div class='complete-name'>
                 <label>Qual seu nome completo?</label>
-                <input id='complete-name' type="text" required placeholder="John Knows Nothing Snow">
+                <input required id='complete-name' type="text" placeholder="John Knows Nothing Snow">
               </div>
   
               <div class='space-between input-with-image'>
                 <label>E o seu CPF?</label>
-                <input id='cpf' type="text" class='register-cpf input-cpf cpf-mask' placeholder="000.000.000-00">
+                <input required id='cpf' type="text" class='register-cpf input-cpf cpf-mask' placeholder="000.000.000-00">
                 <!-- <img src="img/wrong.png"> -->
               </div>
   
               <div>
                 <label>Qual seu WhastApp?</label>
-                <input id='cellphone' type="text" class='phone' placeholder="(00) 00000-0000">
+                <input required id='cellphone' type="text" class='phone' placeholder="(00) 00000-0000">
               </div>
             </div>
   
             <div>
               <div>
                 <label>Telefone para contato:</label>
-                <input id='phone' type="text" class='phone' placeholder="(00) 00000-0000">
+                <input required id='phone' type="text" class='phone' placeholder="(00) 00000-0000">
               </div>
   
               <div class='space-between'>
                 <label>Qual seu e-mail?</label>
-                <input id='email' type="email" placeholder="email@hotmail.com">
+                <input required id='email' type="email" placeholder="email@hotmail.com">
               </div>
   
               <div class='input-with-image'>
                 <label>Crie uma senha</label>
-                <input id='password' class="register-input-password" type="password" placeholder="********">
+                <input required id='password' class="register-input-password" type="password" placeholder="********">
                 <img class="register-password" src="img/eye.png">
               </div>
 
               <div class='input-with-image repeat-password'>
-                <label>Crie uma senha</label>
-                <input id='password' class="register-input-password" type="password" placeholder="********">
-                <img class="register-password" src="img/eye.png">
+                <label>Repita a senha</label>
+                <input required id='password-repeat' class="register-input-password-repeat" type="password" placeholder="********">
+                <img class="register-password-repeat" src="img/eye.png">
               </div>
             </div>
   
@@ -194,11 +194,11 @@
             <p>Nâo se preocupe, todas as suas informações estão seguras!</p>
           </div>
 
-          <form>
+          <form class='form-step-2'>
             <div>
               <div class='complete-name'>
                 <label>Data de nascimento:</label>
-                <input type="date">
+                <input required type="date">
               </div>
   
               <div class='space-between input-with-image'>
@@ -211,7 +211,7 @@
   
               <div>
                 <label>Qual nome da sua mãe?</label>
-                <input type="text" placeholder="Nome completo">
+                <input required type="text" placeholder="Nome completo">
               </div>
             </div>
   
@@ -229,16 +229,24 @@
               <div class='space-between'>
                 <label>Nível de escolaridade:</label>
                 <select>
-                  <option value="fundamental">Ensino Fundamental Incompleto</option>
-                  <option value="casado">Ensino Fundamental completo</option>
+                  <option value="fundamental-incompleto">Ensino fundamental incompleto</option>
+                  <option value="fundamental-completo">Ensino fundamental completo</option>
+                  <option value="medio-incompleto">Ensino médio Incompleto</option>
+                  <option value="medio-completo">Ensino médio completo</option>
+                  <option value="fundamental-incompleto">Ensino superior Incompleto</option>
+                  <option value="fundamental-completo">Ensino superior completo</option>
                 </select>
               </div>
   
               <div>
                 <label>Situação de trabalho:</label>
                 <select>
-                  <option value="fundamental">Trabalhando</option>
-                  <option value="casado">Desempregado</option>
+                  <option value="empregado">Empregado</option>
+                  <option value="desempregado">Desempregado</option>
+                  <option value="autonomo">Autônomo</option>
+                  <option value="servidor-público">Servidor Público</option>
+                  <option value="aposentado">Aposentado</option>
+                  <option value="pensionista">Pensionista</option>
                 </select>
               </div>
             </div>
@@ -247,50 +255,54 @@
               <div>
                 <label>Qual dia do seu pagamento?</label>
                 <select>
-                  <option value="solteiro">01 / 05</option>
-                  <option value="casado">05 / 10</option>
+                  <option value="um">01 / 05</option>
+                  <option value="cinco">05 / 10</option>
+                  <option value="dez">10 / 15</option>
+                  <option value="quinze">15 / 20</option>
+                  <option value="vinte">20 / 25</option>
+                  <option value="trinta">25 / 30</option>
                 </select>
               </div>
   
               <div class='space-between'>
                 <label>Quanto você recebe por mês?</label>
-                <input type="text" placeholder="RS 00,00">
+                <input required type="text" placeholder="RS 00,00">
               </div>
   
               <div>
                 <label>Por mês, você e sua família ganham:</label>
-                <input type="text" placeholder="RS 00,00">
+                <input required type="text" placeholder="RS 00,00">
               </div>
             </div>
             
             <button class='btn finish-second-step'>Avançar</button>
-            <button class='btn-outline step2-back'>Voltar</button>
+            <!-- <button class='btn-outline step2-back'>Voltar</button> -->
           </form>
         </div>
         
         <div class="step third-step">
-          <form>
+          <form class='form-step-3'>
             <div>
               <div>
                 <label for="cep">CEP:</label>
-                <input id="cep" type="text" required placeholder="Digite seu CEP">
+                <input required id="cep" type="text" required placeholder="Digite seu CEP">
               </div>
   
               <div class='adress'>
                 <label for="logradouro">Endereço:</label>
-                <input id="logradouro" type="text" required placeholder="Nome da rua, Bairro">
+                <input required id="logradouro" type="text" required placeholder="Nome da rua, Bairro">
               </div>
   
               <div>
                 <label>Número:</label>
-                <input type="text" placeholder="Digite o número da sua residência">
+                <input required type="text" placeholder="Digite o número da sua residência">
               </div>
             </div>
   
             <div>
               <div class='complement'>
                 <label>Complemento:</label>
-                <input type="text" placeholder="Apartamento, casa, vila, etc.">
+                <input required type="text" placeholder="Apartamento, casa, vila, etc.">
               </div>
   
               <div class='state'>
@@ -328,17 +340,17 @@
   
               <div class='city'>
                 <label for="bairro">Cidade:</label>
-                <input id="bairro" type="text" required placeholder="Digite sua cidade">
+                <input required id="bairro" type="text" required placeholder="Digite sua cidade">
               </div>
             </div>
   
             <button class='btn finish-third-step'>Avançar</button>
-            <button class='btn-outline step3-back'>Voltar</button>
+            <!-- <button class='btn-outline step3-back'>Voltar</button> -->
           </form>
         </div>
   
         <div class="step fourth-step">
-          <form>
+          <form class='form-step-4'>
             <div class="text">
               <p>Falta só mais um pouco para criarmos seu cadastro!</p>
             </div>
@@ -347,9 +359,7 @@
               <div>
                 <div class='clean-name'>
                   <label>Porquê quer ter o nome limpo?</label>
-                  <select>
-                    <option value="rj">Rio de Janeiro</option>
-                  </select>
+                  <input required type="text" placeholder="Digite o motivo">
                 </div>
     
                 <div>
@@ -364,13 +374,15 @@
               <div>
                 <div>
                   <label>Melhor data para pagamento do boleto:</label>
-                  <input type="date">
+                  <input required type="date">
                 </div>
     
                 <div>
                   <label>Como conheceu a Akredito?</label>
                   <select>
-                    <option value="rj">Rio de Janeiro</option>
+                    <option value="facebook">Facebook / Instagram</option>
+                    <option value="amigo">Indicação de um amigo</option>
+                    <option value="facebook">Google</option>
                   </select>
                 </div>
               </div>
@@ -389,22 +401,22 @@
             <div class='reason'>
               <div>
                 <label>Por qual motivo você não conseguiu pagar suas contas? E por que vai conseguir pagar agora?</label>
-                <textarea cols="30" rows="10"></textarea>
+                <textarea required cols="30" rows="10"></textarea>
               </div>
   
               <div class='checkbox'>
-                <input type="checkbox">
+                <input required type="checkbox">
                 <p>Li e aceito a <a href="#">Política de Privacidade</a></p>
               </div>
   
               <div class='checkbox'>
-                <input type="checkbox">
+                <input required type="checkbox">
                 <p>Li e aceito as <a href="#">Condições de Adesão</a></p>
               </div>
             </div>
             
             <button class='btn finish-register'>Finalizar</button>
-            <button class='btn-outline step4-back'>Voltar</button>
+            <!-- <button class='btn-outline step4-back'>Voltar</button> -->
           </form>
         </div>
       </div>
@@ -437,6 +449,8 @@
   <script src="js/mask-cpf.js"></script>
   <script src='js/register.js'></script>
   <script src='js/main.js'></script>
+  <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>  -->
 </body>
 
 </html>

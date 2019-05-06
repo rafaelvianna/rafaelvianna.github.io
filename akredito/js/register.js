@@ -8,6 +8,17 @@ $('.register-password').click(function () {
 	}
 });
 
+$('.register-password-repeat').click(function () {
+	const x = $('.register-input-password-repeat')[0];
+
+	if (x.type === "password") {
+		x.type = "text";
+	} else {
+		x.type = "password";
+	}
+});
+
+
 /*dirty name*/
 
 $('.dirty-name .yes').click(function(e){
@@ -102,54 +113,54 @@ $('.portion .no').click(function(e){
 });
 
 $('.finish-first-step').click(function(e){
-	e.preventDefault();
-	const completeName = $('#complete-name').val() == '';
-	const cpf = $('#cpf').val() == '';
-	const cellphone = $('#cellphone').val() == '';
-	const phone = $('#phone').val() == '';
-	const email = $('#email').val() == '';
-	const empasswordail = $('#password').val() == '';
-
-	if (completeName && cpf && cellphone && phone && email && empasswordail) {
-		$('#complete-name').addClass('error');
-		$('#cpf').addClass('error');
-	} else {
+	if ( $('.form-step-1')[0].checkValidity() ) {
+		e.preventDefault();
 		$('.first-step').removeClass('active');
 		$('.third-step').removeClass('active');
 		$('.fourth-step').removeClass('active');
 		$('.second-step').addClass('active');
-
+	
 		$('.first').removeClass('active');
 		$('.third').removeClass('active');
 		$('.fourth').removeClass('active');
-		$('.second').addClass('active');
+		$('.second').addClass('active');	
+
+		const dirtyName = $('.dirty-name .no').hasClass('active');
+
+		if(dirtyName) {
+			$('.modal-create-account-fail').addClass('active');
+		}
 	}
 });
 
 $('.finish-second-step').click(function(e){
-	e.preventDefault();
-	$('.first-step').removeClass('active');
-	$('.third-step').addClass('active');
-	$('.fourth-step').removeClass('active');
-	$('.second-step').removeClass('active');
+	if ( $('.form-step-2')[0].checkValidity() ) {
+		e.preventDefault();
+		$('.first-step').removeClass('active');
+		$('.third-step').addClass('active');
+		$('.fourth-step').removeClass('active');
+		$('.second-step').removeClass('active');
 
-	$('.first').removeClass('active');
-	$('.third').addClass('active');
-	$('.fourth').removeClass('active');
-	$('.second').removeClass('active');
+		$('.first').removeClass('active');
+		$('.third').addClass('active');
+		$('.fourth').removeClass('active');
+		$('.second').removeClass('active');
+	}
 });
 
 $('.finish-third-step').click(function(e){
-	e.preventDefault();
-	$('.first-step').removeClass('active');
-	$('.third-step').removeClass('active');
-	$('.fourth-step').addClass('active');
-	$('.second-step').removeClass('active');
+	if ( $('.form-step-3')[0].checkValidity() ) {
+		e.preventDefault();
+		$('.first-step').removeClass('active');
+		$('.third-step').removeClass('active');
+		$('.fourth-step').addClass('active');
+		$('.second-step').removeClass('active');
 
-	$('.first').removeClass('active');
-	$('.third').removeClass('active');
-	$('.fourth').addClass('active');
-	$('.second').removeClass('active');
+		$('.first').removeClass('active');
+		$('.third').removeClass('active');
+		$('.fourth').addClass('active');
+		$('.second').removeClass('active');
+	}
 });
 
 $('.step2-back').click(function(e){
@@ -192,22 +203,18 @@ $('.step4-back').click(function(e){
 });
 
 $('.finish-register').click(function(e) {
-	e.preventDefault();
-	$('.modal-create-account').addClass('active');
-	$('body').addClass('login-active');
-
+	if ( $('.form-step-4')[0].checkValidity() ) {
+		e.preventDefault();
+		$('.modal-create-account').addClass('active');
+		$('body').addClass('login-active');
+	}
 });
 
-$('.confirm-new-account').click(function(e){
-	e.preventDefault();
-	$('.modal-create-account').removeClass('active');
-	$('.modal-create-account-fail').addClass('active');
+$('.confirm-new-account').click(function(){
 	$('body').addClass('login-active');
 });
 
-$('.confirm-new-account-fail').click(function(e) {
-	e.preventDefault();
-	$('.modal-create-account-fail').removeClass('active');
+$('.confirm-new-account-fail').click(function() {
 	$('body').removeClass('login-active');
 });
 
@@ -241,7 +248,3 @@ $(".phone")
 				element.mask("(99) 9999-9999");  
 		}  
 });
-
-$('#complete-name').on('change', function() {
-	$('#complete-name').removeClass('error');
-})

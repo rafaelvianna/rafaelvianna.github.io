@@ -94,7 +94,7 @@
 
   <div class="modal-create-account-fail">
     <div>
-      <h3>Ih... Foi mal.</h3>
+      <h3>Ops...</h3>
       <p>
         Infelizmente só atendemos clientes com o nome sujo no SPC, Serasa, ou Boa Vista SCPC. Além disso, não atendemos clientes com cheque sem fundo e/ou protesto em cartório.
         <br/><br/>
@@ -120,7 +120,7 @@
             <div class='input-with-image w-28'>
               <label>E o seu CPF?</label>
               <input readonly type="text" class='register-cpf input-cpf cpf-mask' placeholder="000.000.000-00">
-              <img src="img/wrong.png">
+              <!-- <img src="img/wrong.png"> -->
             </div>
 
             <div class='w-28'>
@@ -141,7 +141,7 @@
             </div>
   
             <div class='input-with-image w-28'>
-              <label>Crie uma senha</label>
+              <label>Senha</label>
               <input readonly class="register-input-password" type="password" placeholder="********">
               <img class="register-password" src="img/eye.png">
             </div>
@@ -151,8 +151,8 @@
             <div class='dirty-name'>
               <label>Você está com o nome sujo?</label>
               <span class='custom-button'>
-                <button class='yes'>Sim</button>
-                <button class='no'>Não</button>
+                <button class=''>Sim</button>
+                <button class=''>Não</button>
                 <button class='dont-know active'>Não sei</button>
               </span>
             </div>
@@ -160,8 +160,8 @@
             <div class='bad-check space-between'>
               <label>Você tem cheque sem fundo?</label>
               <span class='custom-button'>
-                <button class='yes'>Sim</button>
-                <button class='no'>Não</button>
+                <button class=''>Sim</button>
+                <button class=''>Não</button>
                 <button class='dont-know active'>Não sei</button>
               </span>
             </div>
@@ -169,8 +169,8 @@
             <div class='registry'>
               <label>Você tem protesto em cartório?</label>
               <span class='custom-button'>
-                <button class='yes'>Sim</button>
-                <button class='no'>Não</button>
+                <button class=''>Sim</button>
+                <button class=''>Não</button>
                 <button class='dont-know active'>Não sei</button>
               </span>
             </div>
@@ -186,7 +186,7 @@
               <label>Sexo:</label>
               <span class='custom-button gender'>
                 <button class='woman active'>Feminino</button>
-                <button class='man'>Masculino</button>
+                <button class=''>Masculino</button>
               </span>
             </div>
 
@@ -201,25 +201,25 @@
               <label>Estado civil:</label>
               <select>
                 <option value="solteiro">Solteiro</option>
-                <option value="casado">Casado</option>
+                <!-- <option value="casado">Casado</option>
                 <option value="viuvo">Viuvo</option>
-                <option value="divorciado">Divorciado</option>
+                <option value="divorciado">Divorciado</option> -->
               </select>
             </div>
   
             <div class='space-between'>
               <label>Nível de escolaridade:</label>
               <select>
-                <option value="fundamental">Ensino Fundamental Incompleto</option>
-                <option value="casado">Ensino Fundamental completo</option>
+                <option value="superior">Ensino superior incompleto</option>
+                <!-- <option value="casado">Ensino Fundamental completo</option> -->
               </select>
             </div>
   
             <div>
               <label>Situação de trabalho:</label>
               <select>
-                <option value="fundamental">Trabalhando</option>
-                <option value="casado">Desempregado</option>
+                <option value="trabalhando">Trabalhando</option>
+                <!-- <option value="casado">Desempregado</option> -->
               </select>
             </div>
           </div>
@@ -229,7 +229,7 @@
               <label>Qual dia do seu pagamento?</label>
               <select>
                 <option value="solteiro">01 / 05</option>
-                <option value="casado">05 / 10</option>
+                <!-- <option value="casado">05 / 10</option> -->
               </select>
             </div>
 
@@ -294,9 +294,7 @@
               <div class='left-container'>
                 <div class='clean-name'>
                   <label>Porquê quer ter o nome limpo?</label>
-                  <select>
-                    <option value="rj">Rio de Janeiro</option>
-                  </select>
+                  <input readonly required type="text" placeholder="Digite o motivo">
                 </div>
 
                 <div>
@@ -332,7 +330,7 @@
             <div class='reason'>
               <div>
                 <label>Por qual motivo você não conseguiu pagar suas contas? E por que vai conseguir pagar agora?</label>
-                <textarea cols="30" rows="10"></textarea>
+                <textarea readonly cols="30" rows="10"></textarea>
               </div>
             </div>
           </div>

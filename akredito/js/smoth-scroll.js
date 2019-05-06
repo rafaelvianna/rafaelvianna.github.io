@@ -1,14 +1,12 @@
 $(document).ready(function(){
-  var offsetSize = $("nav").innerHeight();
+  if ($( window ).width() > 1199) {
+    if (location.hash === '#simulation') {
+      $(document).scrollTop( $("#menu-simulation").offset().top - 140 )
+    } else {
+      $(document).scrollTop( $("#menu-simulation").offset().top - 100 )
+    }
+  } 
 
-  if (location.hash === '#simulation') {
-    $(document).scrollTop( $("#menu-simulation").offset().top - 140 )
-  } else {
-    $(document).scrollTop( $("#menu-simulation").offset().top - 100 )
-  }
-})
-
-$(document).ready(function(){
   $('#menu-how-works').on('click', function() {
     var anchorLink = $('#how-works');
     var offsetSize = $("nav").innerHeight();

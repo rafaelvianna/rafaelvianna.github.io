@@ -7,9 +7,8 @@
   <title>Akredito - Dúvidas</title>
   <link rel="stylesheet" href="style/bootstrap-grid.min.css">
   <link rel="stylesheet" href="style/css/style.css">
-  <link rel="stylesheet" href="style/slick.css">
-  <link rel="stylesheet" href="style/slick-theme.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body class='doubts-page'>
   <nav class='nav-menu'>
@@ -81,8 +80,8 @@
         <h2 class='title-300'>Como podemos ajudar?</h2>
         <div class="search">
           <form>
-            <input type="text" placeholder="Digite sua pergunta...">
-            <button class='btn'>Procurar</button>
+            <input id="search" name="search" type="text" data-list=".data-list" placeholder="Digite sua pergunta...">
+            <button class='btn btn-primary js-search'>Procurar</button>
           </form>
         </div>
         <p>ou selecione uma categoria abaixo que possa facilitar sua busca</p>
@@ -114,83 +113,129 @@
 
   <div class="comon-questions">
     <div class="container">
-      
-      <div class="comon-questions-texts">
-        <h3 class='title-200'>Propostas & Pedidos</h3>
-        <p>Navegue pelos tópicos abaixo e veja quias são as dúvidas mais frequentes sobre Propostas e Pedidos. </p>
-      </div>
+      <div id="accordion" class="data-list" id='search-result'>
+        <div>
+          <div id="item-1">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item-1-content" aria-expanded="false" aria-controls="item-1-content">
+                O serviço da Akredito atende a pensionistas, aposentados e autônomos?
+                <img src="img/open-item.png" class="question-open">
+                <img src="img/hide-item.png" class="questions-item-hide">
+              </button>
+            </h5>
+          </div>
+          <div id="item-1-content" class="collapse" aria-labelledby="item-1" data-parent="#accordion">
+            <div class="card-body">
+              Sim! Atendemos a todos que tenham dívidas registradas no SPC, Serasa e/ou Boa Vista SCPC e que passaram por nossa avaliação.
+            </div>
+          </div>
+        </div>
 
-      <div class='comon-questions-item'>
-        <h4>O serviço da Akredito atende a pensionistas, aposentados e autônomos?</h4>
-        <button class='accordion'>
-          <img src="img/open-item.png" class='question-open'>
-          <img src="img/hide-item.png" class='questions-item-hide'>
-        </button>
-        <p class='questions-item-hide panel'>Sim! Atendemos a todos que tenham dívidas registradas no SPC, Serasa e/ou Boa Vista SCPC e que passaram por nossa avaliação.
-        </p>  
-      </div>
+        <div>
+          <div id="item-2">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item-2-content" aria-expanded="false" aria-controls="item-2-content">
+                Posso solicitar o serviço da Akredito para pessoas jurídicas?
+                <img src="img/open-item.png" class="question-open">
+                <img src="img/hide-item.png" class="questions-item-hide">
+              </button>
+            </h5>
+          </div>
+          <div id="item-2-content" class="collapse" aria-labelledby="item-2" data-parent="#accordion">
+            <div class="card-body">
+              Não. A missão atual da Akredito é unicamente à reabilitação de pessoas físicas em face dos registros do seu nome no SPC, Serasa e/ou Boa Vista SCPC. Queremos ajudar pessoas físicas a "limparem seu nome" e seguirem sua vida sem os pesos das dívidas.
+            </div>
+          </div>
+        </div>
 
-      <div class='comon-questions-item'>
-        <h4>Posso solicitar o serviço da Akredito para pessoas jurídicas?</h4>
-        <button class='accordion'>
-          <img src="img/open-item.png" class='question-open'>
-          <img src="img/hide-item.png" class='questions-item-hide'>
-        </button>
-        <p class='questions-item-hide panel'>Não. A missão atual da Akredito é unicamente à reabilitação de pessoas físicas em face dos registros do seu nome no SPC, Serasa e/ou Boa Vista SCPC. Queremos ajudar pessoas físicas a "limparem seu nome" e seguirem sua vida sem os pesos das dívidas.
-        </p>  
-      </div>
+        <div>
+          <div id="item-3">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item-3-content" aria-expanded="false" aria-controls="item-3-content">
+              Minhas dívidas não estão registradas no SPC, Serasa e/ou Boa Vista SCPC. Posso solicitar o serviço da Akredito mesmo assim?
+              <img src="img/open-item.png" class="question-open">
+                <img src="img/hide-item.png" class="questions-item-hide">
+              </button>
+            </h5>
+          </div>
+          <div id="item-3-content" class="collapse" aria-labelledby="item-3" data-parent="#accordion">
+            <div class="card-body">
+              Não. Por ora, as atividades da Akredito estão concentradas exclusivamente nos registros realizados no SPC, Serasa e/ou Boa Vista SCPC.
+            </div>
+          </div>
+        </div>
 
-      <div class='comon-questions-item'>
-        <h4>Minhas dívidas não estão registradas no SPC, Serasa e/ou Boa Vista SCPC. Posso solicitar o serviço da Akredito mesmo assim?</h4>
-        <button class='accordion'>
-          <img src="img/open-item.png" class='question-open'>
-          <img src="img/hide-item.png" class='questions-item-hide'>
-        </button>
-        <p class='questions-item-hide panel'>Não. Por ora, as atividades da Akredito estão concentradas exclusivamente nos registros realizados no SPC, Serasa e/ou Boa Vista SCPC.</p>  
-      </div>
+        <div>
+          <div id="item-4">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item-4-content" aria-expanded="false" aria-controls="item-4-content">
+                É necessário ter um fiador para solicitar o serviço da Akredito?
+                <img src="img/open-item.png" class="question-open">
+                <img src="img/hide-item.png" class="questions-item-hide">
+              </button>
+            </h5>
+          </div>
+          <div id="item-4-content" class="collapse" aria-labelledby="item-4" data-parent="#accordion">
+            <div class="card-body">
+              Para solicitar o serviço da Akredito, não é necessário fiador. Também não exigimos nenhum tipo de garantia.
+            </div>
+          </div>
+        </div>
 
-      <div class='comon-questions-item'>
-        <h4>É necessário ter um fiador para solicitar o serviço da Akredito?</h4>
-        <button class='accordion'>
-          <img src="img/open-item.png" class='question-open'>
-          <img src="img/hide-item.png" class='questions-item-hide'>
-        </button>
-        <p class='questions-item-hide panel'>Para solicitar o serviço da Akredito, não é necessário fiador. Também não exigimos nenhum tipo de garantia.</p>  
-      </div>
+        <div>
+          <div id="item-5">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item-5-content" aria-expanded="false" aria-controls="item-5-content">
+                A Akredito aumenta o score?
+                <img src="img/open-item.png" class="question-open">
+                <img src="img/hide-item.png" class="questions-item-hide">
+              </button>
+            </h5>
+          </div>
+          <div id="item-5-content" class="collapse" aria-labelledby="item-5" data-parent="#accordion">
+            <div class="card-body">
+              A missão da Akredito é ajudar pessoas físicas a "limparem seu nome" . Manter o nome limpo é essencial para aumentar o score, mas o número somente aumenta com o passar do tempo, caso o cliente mantenha as suas contas em dia, provando ser um bom pagador. Caso te interesse em aumentar o score, a Akredito recomenda que você continue com o nome limpo, pague as suas contas em dia e procure fazer um "cadastro positivo" no SPC, Serasa e Boa Vista SCPC.
+            </div>
+          </div>
+        </div>
 
-      <div class='comon-questions-item'>
-        <h4>A Akredito aumenta o score?</h4>
-        <button class='accordion'>
-          <img src="img/open-item.png" class='question-open'>
-          <img src="img/hide-item.png" class='questions-item-hide'>
-        </button>
-        <p class='questions-item-hide panel'>A missão da Akredito é ajudar pessoas físicas a "limparem seu nome" . Manter o nome limpo é essencial para aumentar o score, mas o número somente aumenta com o passar do tempo, caso o cliente mantenha as suas contas em dia, provando ser um bom pagador. 
-            Caso te interesse em aumentar o score, a Akredito recomenda que você continue com o nome limpo, pague as suas contas em dia e procure fazer um "cadastro positivo" no SPC, Serasa e Boa Vista SCPC.
-        </p>  
-      </div>
+        <div>
+          <div id="item-6">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item-6-content" aria-expanded="false" aria-controls="item-6-content">
+                O serviço da Akredito é confiável?
+                <img src="img/open-item.png" class="question-open">
+                <img src="img/hide-item.png" class="questions-item-hide">
+              </button>
+            </h5>
+          </div>
+          <div id="item-6-content" class="collapse" aria-labelledby="item-6" data-parent="#accordion">
+            <div class="card-body">
+              A Akredito é uma empresa jovem que oferece um novo serviço para os brasileiros. Achamos importante o cliente fazer uma pesquisa cautelosa antes de escolher uma empresa para lhe ajudar a pagar as suas dívidas, por isso temos todo cuidado de responder qualquer pergunta que o cliente possa ter a respeito da segurança do serviço.
+              Caso tenha dúvidas sobre os nossos serviços, você pode procurar nossa empresa através do CNPJ: 27.351.134/0001-03.
+              Também pode esclarecer algumas dúvidas olhando o nosso site: <a href="https://www.akredito.com.br/">https://www.akredito.com.br</a> <a href="https://pt-br.facebook.com/euakredito/"> Facebook:</a> <a href="https://www.instagram.com/akredito/">Instagram: </a>
+              Você também pode entrar em contato com a nossa equipe através dos telefones: (21) 2137-8772/ (21) 2137-8792.
+              Se desejar, pode mandar e-mail para: contato@akredito.com.br que a nossa equipe irá responder.
+            </div>
+          </div>
+        </div>
 
-      <div class='comon-questions-item'>
-        <h4>O serviço da Akredito é confiável?</h4>
-        <button class='accordion'>
-          <img src="img/open-item.png" class='question-open'>
-          <img src="img/hide-item.png" class='questions-item-hide'>
-        </button>
-        <p class='questions-item-hide panel'>
-            A Akredito é uma empresa jovem que oferece um novo serviço para os brasileiros. Achamos importante o cliente fazer uma pesquisa cautelosa antes de escolher uma empresa para lhe ajudar a pagar as suas dívidas, por isso temos todo cuidado de responder qualquer pergunta que o cliente possa ter a respeito da segurança do serviço.
-            Caso tenha dúvidas sobre os nossos serviços, você pode procurar nossa empresa através do CNPJ: 27.351.134/0001-03.
-            Também pode esclarecer algumas dúvidas olhando o nosso site: <a href="https://www.akredito.com.br/">https://www.akredito.com.br</a> <a href="https://pt-br.facebook.com/euakredito/"> Facebook:</a> <a href="https://www.instagram.com/akredito/">Instagram: </a>
-            Você também pode entrar em contato com a nossa equipe através dos telefones: (21) 2137-8772/ (21) 2137-8792.
-            Se desejar, pode mandar e-mail para: contato@akredito.com.br que a nossa equipe irá responder.
-        </p>  
-      </div>
-
-      <div class='comon-questions-item'>
-        <h4>A Akredito dá empréstimo?</h4>
-        <button class='accordion'>
-          <img src="img/open-item.png" class='question-open'>
-          <img src="img/hide-item.png" class='questions-item-hide'>
-        </button>
-        <p class='questions-item-hide panel'>Não, em nenhum momento a Akredito transfere dinheiro para a sua conta, a negociação é feita diretamente com o credor original, ​visando​ o cancelamento do registro do seu nome realizado pelo mesmo.</p>  
+        <div>
+          <div id="item-7">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item-7-content" aria-expanded="false" aria-controls="item-7-content">
+                A Akredito dá empréstimo?
+                <img src="img/open-item.png" class="question-open">
+                <img src="img/hide-item.png" class="questions-item-hide">
+              </button>
+            </h5>
+          </div>
+          <div id="item-7-content" class="collapse" aria-labelledby="item-7" data-parent="#accordion">
+            <div class="card-body">
+              Não, em nenhum momento a Akredito transfere dinheiro para a sua conta, a negociação é feita diretamente com o credor original, ​visando​ o cancelamento do registro do seu nome realizado pelo mesmo.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -204,8 +249,8 @@
           <input type="text" placeholder="Email">
         </div>
         <div class='question-contact-text-area'>
-          <textarea name="" id="" cols="30" rows="7"></textarea>
-          <button class='btn'>Enviar</button>
+          <textarea name="" id="" cols="30" rows="7" placeholder="Digite aqui sua dúvida"></textarea>
+          <button class='btn btn-primary'>Enviar</button>
         </div>
       </form>
 
@@ -278,8 +323,8 @@
         </div>
 
         <div class='social-media'>
-          <a href=''><img src="img/facebook.jpg" alt="Facebook"></a>
-          <a href=''><img src="img/instagram-logo.png" alt="Instragram"></a>
+          <a href='https://pt-br.facebook.com/euakredito/'><img src="img/facebook.jpg" alt="Facebook"></a>
+          <a href='https://www.instagram.com/akredito/'><img src="img/instagram-logo.png" alt="Instragram"></a>
         </div>
 
         <div class='copyright'>
@@ -292,19 +337,11 @@
   </footer>
 
   <script src='js/jquery.js'></script>
-  <!-- <script src='js/smoth-scroll.js'></script> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src='js/input-range.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js'></script>
   <script src="js/mask-cpf.js"></script>
   <script src='js/main.js'></script>
-
-  <script>
-
-  // $(document).on(load, function(e) {
-  //   e.preventDefault();
-  //   $(document).scrollTop( $("#about-us").offset().top - 74 )
-
-  // })
-  </script>
+  <script src='js/jquery.hideseek.min.js'></script>
 </body>
 </html>

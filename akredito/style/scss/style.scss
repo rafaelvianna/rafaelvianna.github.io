@@ -169,6 +169,118 @@ nav {
 }
 
 .doubts-page {
+	.menu {
+		ul {
+			margin: 0;
+
+			.link-active {
+				a {
+					&:hover {
+						border-bottom: none;
+					}
+				}
+			}
+
+			a {
+				text-decoration: none;
+				color: $gray-400;
+			}
+		}
+	
+	}
+
+	.icon-password {
+		top: 50px !important;
+	}
+
+	.btn-primary {
+		background: $green;
+		border: 0;
+		
+		&:hover,
+		&:active {
+			background: $green-200 !important;
+		}
+	}
+
+	.white-btn {
+		background: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #a8cf45;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	a {
+		color: $gray-400;
+
+		&:hover {
+			color: $gray-400;
+			text-decoration: none;	 
+		}
+	}
+
+	#accordion {
+
+		h5 {
+			position: relative;
+			border-bottom: 1px solid #cecece;
+			margin-bottom: 20px !important;
+
+			button {
+				padding: 0 30px;
+				margin-bottom: 20px;
+				background-image: url(../../img/item-doubts.png);
+				background-repeat: no-repeat;
+				background-position: 0 center;
+				text-decoration: none;
+				color: $gray-400;
+				font-weight: 900;
+				text-align: left;
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				
+				img {
+					float: right;
+					display: none;
+
+					&.questions-item-hide {
+						display: block;
+					}
+				}
+
+				&.collapsed {
+					.question-open {
+						display: block
+					}
+
+					.questions-item-hide {
+						display: none;
+					}
+				}
+
+
+				&:hover {
+					background-color: #ffffff;
+				}
+			}
+		}
+
+		.card-body {
+			padding: 0 30px 30px!important;
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
+
 	.hero {
 		background-image: url(../../img/bg-doubt.jpg);
 		background-size: cover;
@@ -211,7 +323,7 @@ nav {
 		button {
 			position: absolute;
 			right: 10px;
-			top: 6px;
+			top: 10px;
 			cursor: pointer;
 		}
 	}
@@ -1066,7 +1178,8 @@ footer {
 						top: 32px;
 						right: 10px;
 
-						&.register-password {
+						&.register-password,
+						&.register-password-repeat {
 							cursor: pointer;
 						}
 					}
@@ -1074,7 +1187,7 @@ footer {
 					&.repeat-password {
 						margin-left: 40px;
 
-						@media screen and (max-width: 600px) {
+						@media screen and (max-width: 992px) {
 							margin-left: 0;
 						}
 					}
