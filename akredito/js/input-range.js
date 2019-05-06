@@ -1,5 +1,5 @@
 let initialValue = 1000;
-let qtdPortion = 1;
+let qtdPortion = 2;
 
 function calculaValor(divida, parcelas) {
     let final = (0.055*((divida*0.3)*1.1)) / (1-(1+0.055)**-parcelas)
