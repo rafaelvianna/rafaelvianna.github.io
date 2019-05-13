@@ -298,8 +298,11 @@
   <script src='js/main.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
   <script>
-    wow = new WOW({offset: 200})
-    wow.init();
+    console.log($(window).width())
+    if($(window).width() > 1024) {
+      wow = new WOW({offset: 200})
+      wow.init();
+    }
   </script>
 </body>
 </html>

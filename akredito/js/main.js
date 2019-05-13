@@ -77,5 +77,5 @@ $(document).ready(function() {
     $('html, body').animate({
         scrollTop: $("#accordion").offset().top - 160
     }, 500);
-  })
+  }) 
 });
