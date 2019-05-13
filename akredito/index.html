@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style/bootstrap-grid.min.css">
   <link rel="stylesheet" href="style/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
   <nav class='nav-menu'>
@@ -75,7 +76,7 @@
 
   <div class="hero">
     <div class="container">
-      <div class='texts'>
+      <div class='texts wow slideInLeft'>
         <h2 class='title-300'>A nova solução para<br/> limpar seu nome.</h2>
         <p>Ajudando você a conquistar seus objetivos</p>
         <a href="cadastro.html" class='btn'>Cadastre-se grátis</a>
@@ -83,23 +84,23 @@
     </div>
   </div>
 
-  <div class="how-works" id='how-works'>
+  <div class="how-works wow fadeIn" data-wow-offset="10" id='how-works'>
     <div class="container">
       <h3 class='title-200'>Como funciona</h3>
       <div class='how-works-content'>
-        <div>
+        <div class='wow bounceIn'>
           <img src="img/forma1.png" alt="">
           <h4>Procuramos</h4>
           <p>Vamos em busca das dívidas que te deixam negativado.</p>
         </div>
 
-        <div>
+        <div class='wow bounceIn'>
           <img src="img/forma3.png" alt="">
           <h4>Facilitamos</h4>
           <p>Localizamos os credores e ajudamos na hora da negociação.</p>
         </div>
 
-        <div>
+        <div class='wow bounceIn'>
           <img src="img/forma2.png" alt="">
           <h4>Parcelamos</h4>
           <p>Oferecemos descontos e opção de parcelamentos sustentáveis.</p>
@@ -111,32 +112,30 @@
   <div class="advantages">
     <div class="container">
       <div class='advantages-content'>
-        <div>
+        <div class='wow slideInLeft'>
           <h3 class='title-200'>Vantagens</h3>
           <p>
             Nossa missão é proporcionar uma alternativa rápida e eficaz para deixar seu nome limpo. Com transparência em todas as etapas ao longo do processo, reduzimos as burocracias e devolvemos o controle das finanças para você. Com a gente, será possível gerenciar de forma simples e fácil dívidas registradas nos <b>órgãos de proteção ao crédito</b>. 
           </p>
           <a href="cadastro.html" class='btn-outline'> Eu quero!</a>
         </div>
-        <img src="img/forma4.png" alt="">
+        <img src="img/forma4.png" class='wow slideInRight' alt="">
       </div>
     </div>
   </div>
 
   <div class="about-us" id='about-us'>
     <div class="container">
-      <div>
+      <div class='wow fadeIn'>
         <h3 class='title-200'>Conheça mais sobre nós</h3>
         <p>Assista agora</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/pe7fzkGhvLY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-        <div></div>
       </div>
 
       <span class='green-image'></span>
 
       <div id='simulation'>
-        <div>
+        <div class='wow fadeIn'>
           <h3 class='title-200 title-simulation'>Simulação baseada no histórico de desconto *</h3>
           <small class='subtitle-simulation'>* Essa simulação não é uma garantia de proposta. Os valores podem sofrer alterações.</small>
           <div class='simulation'>
@@ -174,26 +173,26 @@
     </div>
   </div>
 
-  <div class="testimonials">
+  <div class="testimonials" id='testimonials'>
     <div class="container">
-      <h3 class='title-200'>Depoimentos de Clientes</h3>
+      <h3 class='title-200 wow fadeIn'>Depoimentos de Clientes</h3>
 
       <div class="testimonials-content">
-        <div>
+        <div class='wow bounceIn'>
           <p>
             Quando me inscrevi, percebi toda a atenção e praticidade que a empresa trás. Para mim, foi muito importante o papel da Akredito, pois com a ajuda desta empresa consegui limpar meu nome e comprar meu apartamento.” 
           </p>
           <p class='author-name'>Jennifer, SP</p>
         </div>
     
-        <div>
+        <div class='wow bounceIn'>
           <p>
             Resolveu meus problemas, consegui limpar meu nome e o melhor foi o super desconto que tive na dívida.
           </p>
           <p class='author-name'>André, SP</p>
         </div>
 
-        <div>
+        <div class='wow bounceIn'>
           <p>
             “Empresa séria! Graças a Deus me ajudou a limpar meu nome por isso tem total minha confiança. Indiquei um montão de gente para fazer o serviço, porque vocês são de confiança. Eu vou indicar muita gente ainda.
           </p>
@@ -205,7 +204,7 @@
 
   <div class="contact" id="contact">
     <div class="container">
-      <div class='contact-content'> 
+      <div class='contact-content wow slideInRight'> 
         <h3 class='title-200'>Entre em contato com a gente!</h3>
         <p>Nossa equipe irá responder assim que possível.</p>
         <form>
@@ -225,11 +224,11 @@
         <div>
           <p class='title-100'>Menu</p>
           <ul>
-            <li><a href="#how-works">Como funciona</a></li>
-            <li><a href="#about-us">Quem Somos</a></li>
-            <li><a href="#simulation">Faça uma simulação</a></li>
-            <li><a href="#testimonials">Depoimentos</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#how-works" id='footer-how-work'>Como funciona</a></li>
+            <li><a href="#about-us" id='footer-about-us'>Quem Somos</a></li>
+            <li><a href="#simulation" id='footer-simulation'>Faça uma simulação</a></li>
+            <li><a href="#testimonials" id='footer-testimonials'>Depoimentos</a></li>
+            <li><a href="#contact" id='footer-contact'>Contato</a></li>
           </ul>
         </div>
 
@@ -237,15 +236,15 @@
           <p class='title-100'>Espaço do Cliente</p>
           <ul>
             <li><a href="cadastro.html">Faça seu cadastro</a></li>
-            <li><a href="#">Faça seu login</a></li>
+            <li><a href="#" class='login'>Faça seu login</a></li>
           </ul>
         </div>
 
         <div>
           <p class='title-100'>Termos</p>
           <ul>
-            <li><a href="#">Política de privacidade</a></li>
-            <li><a href="#">Condições de adesão</a></li>
+            <li><a target="_blank" href="https://s3.amazonaws.com/akredito-web-production/static/pdfs/akredito_termo_de_cadastro.pdf">Política de privacidade</a></li>
+            <li><a target="_blank" href="https://s3.amazonaws.com/akredito-web-production/static/pdfs/akredito_termo_de_adesao.pdf">Condições de adesão</a></li>
           </ul>
         </div>
 
@@ -297,5 +296,10 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js'></script>
   <script src="js/mask-cpf.js"></script>
   <script src='js/main.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+  <script>
+    wow = new WOW({offset: 200})
+    wow.init();
+  </script>
 </body>
 </html>

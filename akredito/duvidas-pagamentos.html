@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Akredito - Dúvidas</title>
+  <link rel="stylesheet" href="style/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="style/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body class='doubts-page'>
+  <nav class='nav-menu'>
+    <div class="container">
+      <div class='menu'>
+        <h1><a href="index.html"><img src="img/logo.png" alt="Logotipo Akredito"></a></h1>
+        <span class='menu-open'><img src="img/list.svg" alt=""></span>
+        <span class='menu-close hide'><img src="img/close.svg" alt=""></span>
+        <ul>
+          <li><a href="index.html#how-works" id='menu-how-works'>Como funciona</a></li>
+          <li><a href="index.html#about-us" id='menu-about-us'>Quem somos</a></li>
+          <li><a href="index.html#simulation" id='menu-simulation'>Faça uma simulação</a></li>
+          <li class='link-active'><a href="duvidas.html">Dúvidas</a></li>
+          <li><a href="index.html#contact" id='menu-contact'>Contato</a></li>
+          <li><a href="#" class='login'><b>Entrar</b></a></li>
+          <li><a class='btn-outline' href="cadastro.html">Cadastre-se grátis</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="box-login">
+    <div>
+      <h3>Login</h3>
+      <span class='close-login'>
+        <img src="img/close.png">
+      </span>
+      <form>
+        <label>CPF:</label>
+        <div class="input-container">
+          <input type="text" class='input-cpf cpf-mask' placeholder="000.000.000-00">
+          <img class='check-cpf' src="img/check-cpf.png" alt="">
+        </div>
+
+        <div class="input-container">
+          <label class='password'>Senha:</label>
+          <input class='input-password' type="password" placeholder="********">
+          <a href='' class='forgot-password'>Esqueci minha senha</a>
+          <img class='icon-input icon-password' src='img/eye.png'>
+        </div>
+        
+
+        <button class='btn-login'>Entrar</button>
+        <small>Não tem cadastro? <a href="">Clique aqui</a></small>     
+      </form>
+    </div>
+  </div>
+
+  <div class="box-recover-password">
+    <div>
+      <h3>Recuperar senha</h3>
+      <span class='close-login'>
+        <img src="img/close.png">
+      </span>
+      <form>
+        <label>Email Cadastrado:</label>
+        <div class="input-container">
+          <input type="text" placeholder="Digite seu email cadastrado">
+        </div>
+
+        <button class='btn-login'>Recuperar Senha</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="container">
+      <div class='texts'>
+        <h2 class='title-300'>Como podemos ajudar?</h2>
+        <div class="search">
+          <form>
+            <input id="search" name="search" type="text" data-list=".data-list" placeholder="Digite sua pergunta...">
+            <button class='btn btn-primary js-search'>Procurar</button>
+          </form>
+        </div>
+        <p>ou selecione uma categoria abaixo que possa facilitar sua busca</p>
+      </div>
+
+      <div class="cards">
+        <a href="duvidas-como-funciona.html">
+          <div>
+            <img src="img/sapatos.png">
+            <p>Como funciona</p>
+          </div>
+        </a>
+
+        <a href='duvidas-cadastro.html'>
+          <div>
+            <img src="img/hired.png">
+            <p>Cadastro</p>
+          </div>
+        </a>
+
+        <a href='duvidas-propostas.html'>
+          <div>
+            <img src="img/edit.png">
+            <p>Propostas e pedidos</p>
+          </div>
+        </a>
+
+        <a href='duvidas-pagamentos.html'>
+          <div class='doubt-active'>
+            <img src="img/payment.png">
+            <p>Pagamento</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="comon-questions">
+    <div class="container">
+      <div id="accordion" class="data-list" id='search-result'>
+        <!--Pagamentos-->
+        <div>
+          <div id="item-22">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item-22-content" aria-expanded="false" aria-controls="item-22-content">
+                Em quantas parcelas posso pagar minha dívida?
+                <img src="img/open-item.png" class="question-open">
+                <img src="img/hide-item.png" class="questions-item-hide">
+              </button>
+            </h5>
+          </div>
+          <div id="item-22-content" class="collapse" aria-labelledby="item-22" data-parent="#accordion">
+            <div class="card-body">
+              Parcelamos as dívidas em até 18 vezes, dependendo da análise de cada caso.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="item-23">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item-23-content" aria-expanded="false" aria-controls="item-23-content">
+                Como faço o pagamento da minha parcela para a Akredito?
+                <img src="img/open-item.png" class="question-open">
+                <img src="img/hide-item.png" class="questions-item-hide">
+              </button>
+            </h5>
+          </div>
+          <div id="item-23-content" class="collapse" aria-labelledby="item-23" data-parent="#accordion">
+            <div class="card-body">
+              Aceitamos o pagamento da parcela através de boletos que podem ser encontrados e baixados na seção "Parcelamentos" em sua página de acompanhamento.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="item-24">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item-24-content" aria-expanded="false" aria-controls="item-24-content">
+                É possível alterar a data de vencimento das parcelas?
+                <img src="img/open-item.png" class="question-open">
+                <img src="img/hide-item.png" class="questions-item-hide">
+              </button>
+            </h5>
+          </div>
+          <div id="item-24-content" class="collapse" aria-labelledby="item-24" data-parent="#accordion">
+            <div class="card-body">
+              <p>As datas de vencimento das parcelas estão disponíveis na página "Parcelamentos".</p><br/>
+              <p>Para acessar essa página basta fazer o login ​em "Entrar"​ no nosso site.</p><br/>
+              <p>Dentro de "Parcelamentos" é possível ver também o Status do pagamento (​Ex:​ "À vencer", "Pago" ou "Pagamento vencido").</p><br/>
+              <p>Caso ​precise​ modificar a data, por favor entre em contato com a Akredito o mais rápido possível através dos <a href='https://akredito.com.br/painel/atendimento/' target="_blank">Canais de Atendimento.</a></p><br/>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="item-25">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item-25-content" aria-expanded="false" aria-controls="item-25-content">
+                É possível pagar as minhas parcelas antecipadamente?
+                <img src="img/open-item.png" class="question-open">
+                <img src="img/hide-item.png" class="questions-item-hide">
+              </button>
+            </h5>
+          </div>
+          <div id="item-25-content" class="collapse" aria-labelledby="item-25" data-parent="#accordion">
+            <div class="card-body">
+                Gostaríamos de oferecer esse serviço automaticamente, porém, no momento, se quiser antecipar parcelas, por favor entre em contato com a nossa equipe através dos <a href='https://akredito.com.br/painel/atendimento/' target="_blank">Canais de Atendimento.</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="item-26">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item-26-content" aria-expanded="false" aria-controls="item-26-content">
+                Qual é a consequência de atrasar o pagamento das parcelas?
+                <img src="img/open-item.png" class="question-open">
+                <img src="img/hide-item.png" class="questions-item-hide">
+              </button>
+            </h5>
+          </div>
+          <div id="item-26-content" class="collapse" aria-labelledby="item-26" data-parent="#accordion">
+            <div class="card-body">
+              Dentro do login "Entrar", em "Parcelamentos", a sua parcela vai aparecer como "Vencida". O atraso no pagamento das parcelas pode resultar em ​nova​ inclusão ​do​ nome nos cadastros do SPC, Serasa e Boa Vista SCPC. Além disso, haverá a necessidade do pagamento de uma taxa referente a multa de atraso. Caso você saiba que irá atrasar algum pagamento, por favor entre em contato com a Akredito o mais rápido possível através dos <a href='https://akredito.com.br/painel/atendimento/' target="_blank">Canais de Atendimento.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="comon-question-contact">
+    <div class="container">
+      <h4>Não encontrou o que precisava? Entre em contato com a gente!</h4>
+      <form>
+        <div class='question-contact-text-input'>
+          <input type="text" placeholder="Nome" class='input-name'>
+          <input type="text" placeholder="Email">
+        </div>
+        <div class='question-contact-text-area'>
+          <textarea name="" id="" cols="30" rows="7" placeholder="Digite aqui sua dúvida"></textarea>
+          <button class='btn btn-primary'>Enviar</button>
+        </div>
+      </form>
+
+      <div class='question-contact-texts'>
+        <p><img src="img/phone.png"> (21) 2137 8772 ou (21) 2137 8792</p>
+        <p><img src="img/whatsapp.png"> (21) 98351-7878</p>
+        <p><img src="img/email.png"> contato@akredito.com.br</p>
+        <button class='btn white-btn'>Iniciar Chat</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <span><a href="#"><img src="img/linha.png" alt=""></a></span>
+    <div class="container">
+      <div class='footer-content'>
+        <div>
+          <p class='title-100'>Menu</p>
+          <ul>
+            <li><a href="index.html#how-works" id='footer-how-work'>Como funciona</a></li>
+            <li><a href="index.html#about-us" id='footer-about-us'>Quem Somos</a></li>
+            <li><a href="index.html#simulation" id='footer-simulation'>Faça uma simulação</a></li>
+            <li><a href="index.html#testimonials" id='footer-testimonials'>Depoimentos</a></li>
+            <li><a href="index.html#contact" id='footer-contact'>Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class='title-100'>Espaço do Cliente</p>
+          <ul>
+            <li><a href="cadastro.html">Faça seu cadastro</a></li>
+            <li><a href="#" class='login'>Faça seu login</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class='title-100'>Termos</p>
+          <ul>
+            <li><a target="_blank" href="https://s3.amazonaws.com/akredito-web-production/static/pdfs/akredito_termo_de_cadastro.pdf">Política de privacidade</a></li>
+            <li><a target="_blank" href="https://s3.amazonaws.com/akredito-web-production/static/pdfs/akredito_termo_de_adesao.pdf">Condições de adesão</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class='title-100'>Atendimento</p>
+          <ul>
+            <li>(21) 2137 8772</li>
+            <li>(21) 2137 8792</li>
+            <li>(21) 98351 7878</li>
+            <li>contato@akredito.com.br</li>
+          </ul>
+        </div>
+
+        <div>
+          <p class='title-100'>Premios e participação</p>
+          <ul>
+            <li><img src="img/footer3.png" alt=""></li>
+            <li><img src="img/footer4.png" alt=""></li>
+            <li class='last-image'><img src="img/footer2.png" alt=""></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class='footer-social'>
+        <div>
+          <a href="#">
+            <img src="img/logo.png" alt="">
+          </a>
+        </div>
+
+        <div class='social-media'>
+          <a href='https://pt-br.facebook.com/euakredito/'><img src="img/facebook.jpg" alt="Facebook"></a>
+          <a href='https://www.instagram.com/akredito/'><img src="img/instagram-logo.png" alt="Instragram"></a>
+        </div>
+
+        <div class='copyright'>
+          <img src="img/footer1.png" alt="">
+          <small>2019. Todos os direitos reservados.</small>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src='js/jquery.js'></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src='js/input-range.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js'></script>
+  <script src="js/mask-cpf.js"></script>
+  <script src='js/main.js'></script>
+  <script src='js/jquery.hideseek.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+  <script>
+    wow = new WOW({offset: 200})
+    wow.init();
+  </script>
+</body>
+</html>

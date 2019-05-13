@@ -118,41 +118,48 @@
               <div class='complete-name'>
                 <label>Qual seu nome completo?</label>
                 <input required id='complete-name' type="text" placeholder="John Knows Nothing Snow">
+                <small class='message-error'>Escreva seu nome</small>
               </div>
   
-              <div class='space-between input-with-image'>
+              <div class='space-between input-with-image input-cpf'>
                 <label>E o seu CPF?</label>
-                <input required id='cpf' type="text" class='register-cpf input-cpf cpf-mask' placeholder="000.000.000-00">
+                <input id='cpf' type="text" class='register-cpf input-cpf cpf-mask' placeholder="000.000.000-00">
+                <small class='message-error'>Digite um cpf válido</small>
                 <!-- <img src="img/wrong.png"> -->
               </div>
   
-              <div>
+              <div class='input-whatsapp'>
                 <label>Qual seu WhastApp?</label>
-                <input required id='cellphone' type="text" class='phone' placeholder="(00) 00000-0000">
+                <input id='cellphone' type="text" class='phone' placeholder="(00) 00000-0000">
+                <small class='message-error'>Digite seu WhastApp corretamente</small>
               </div>
             </div>
   
             <div>
-              <div>
+              <div class='input-phone'>
                 <label>Telefone para contato:</label>
-                <input required id='phone' type="text" class='phone' placeholder="(00) 00000-0000">
+                <input id='phone' type="text" class='phone' placeholder="(00) 0000-0000">
+                <small class='message-error'>Digite seu telefone corretamente</small>
               </div>
   
-              <div class='space-between'>
+              <div class='space-between input-email'>
                 <label>Qual seu e-mail?</label>
-                <input required id='email' type="email" placeholder="email@hotmail.com">
+                <input id='email' type="email" placeholder="email@hotmail.com">
+                <small class='message-error'>Digite um email válido</small>
               </div>
   
-              <div class='input-with-image'>
+              <div class='input-with-image input-password'>
                 <label>Crie uma senha</label>
-                <input required id='password' class="register-input-password" type="password" placeholder="********">
+                <input id='password' class="register-input-password" type="password" placeholder="********">
                 <img class="register-password" src="img/eye.png">
+                <small class='message-error'>Digite uma senha com mais de 5 caracteres</small>
               </div>
 
               <div class='input-with-image repeat-password'>
                 <label>Repita a senha</label>
-                <input required id='password-repeat' class="register-input-password-repeat" type="password" placeholder="********">
+                <input id='passwordRepeat' class="register-input-password-repeat" type="password" placeholder="********">
                 <img class="register-password-repeat" src="img/eye.png">
+                <small class='message-error'>Digite a mesma senha</small>
               </div>
             </div>
   
@@ -162,8 +169,9 @@
                 <span class='custom-button'>
                   <button class='yes'>Sim</button>
                   <button class='no'>Não</button>
-                  <button class='dont-know active'>Não sei</button>
+                  <button class='dont-know'>Não sei</button>
                 </span>
+                <small class='message-error'>Selecione uma opção</small>
               </div>
   
               <div class='bad-check space-between'>
@@ -171,8 +179,9 @@
                 <span class='custom-button'>
                   <button class='yes'>Sim</button>
                   <button class='no'>Não</button>
-                  <button class='dont-know active'>Não sei</button>
+                  <button class='dont-know'>Não sei</button>
                 </span>
+                <small class='message-error'>Selecione uma opção</small>
               </div>
   
               <div class='registry'>
@@ -180,8 +189,9 @@
                 <span class='custom-button'>
                   <button class='yes'>Sim</button>
                   <button class='no'>Não</button>
-                  <button class='dont-know active'>Não sei</button>
+                  <button class='dont-know'>Não sei</button>
                 </span>
+                <small class='message-error'>Selecione uma opção</small>
               </div>
             </div>
   
@@ -218,7 +228,8 @@
             <div>
               <div>
                 <label>Estado civil:</label>
-                <select>
+                <select required>
+                  <option value=""></option>
                   <option value="solteiro">Solteiro</option>
                   <option value="casado">Casado</option>
                   <option value="divorciado">Divorciado</option>
@@ -228,7 +239,8 @@
   
               <div class='space-between'>
                 <label>Nível de escolaridade:</label>
-                <select>
+                <select required>
+                  <option value=""></option>
                   <option value="fundamental-incompleto">Ensino fundamental incompleto</option>
                   <option value="fundamental-completo">Ensino fundamental completo</option>
                   <option value="medio-incompleto">Ensino médio Incompleto</option>
@@ -240,7 +252,8 @@
   
               <div>
                 <label>Situação de trabalho:</label>
-                <select>
+                <select required>
+                  <option value=""></option>
                   <option value="empregado">Empregado</option>
                   <option value="desempregado">Desempregado</option>
                   <option value="autonomo">Autônomo</option>
@@ -251,20 +264,8 @@
               </div>
             </div>
   
-            <div>
-              <div>
-                <label>Qual dia do seu pagamento?</label>
-                <select>
-                  <option value="um">01 / 05</option>
-                  <option value="cinco">05 / 10</option>
-                  <option value="dez">10 / 15</option>
-                  <option value="quinze">15 / 20</option>
-                  <option value="vinte">20 / 25</option>
-                  <option value="trinta">25 / 30</option>
-                </select>
-              </div>
-  
-              <div class='space-between'>
+            <div>  
+              <div class='two-columns'>
                 <label>Quanto você recebe por mês?</label>
                 <input required type="text" placeholder="RS 00,00">
               </div>
@@ -307,7 +308,8 @@
   
               <div class='state'>
                 <label>Estado:</label>
-                <select id="uf">
+                <select id="uf" required>
+                  <option value=""></option>
                   <option value="AC">Acre</option>
                   <option value="AL">Alagoas</option>
                   <option value="AP">Amapá</option>
@@ -359,7 +361,15 @@
               <div>
                 <div class='clean-name'>
                   <label>Porquê quer ter o nome limpo?</label>
-                  <input required type="text" placeholder="Digite o motivo">
+                  <select required>
+                    <option value=""></option>
+                    <option value="">Quero abrir um negócio</option>
+                    <option value="">Quero um cartão de credito</option>
+                    <option value="">Quero comprar casa</option>
+                    <option value="">Quero comprar carro</option>
+                    <option value="">É a coisa certa a se fazer</option>
+                    <option value="">Dignidade de ter o nome limpo</option>
+                  </select>
                 </div>
     
                 <div>
@@ -373,17 +383,13 @@
               
               <div>
                 <div>
-                  <label>Melhor data para pagamento do boleto:</label>
-                  <input required type="date">
+                  <label>Qual dia do seu pagamento?</label>
+                  <input type="date" required />
                 </div>
-    
+
                 <div>
-                  <label>Como conheceu a Akredito?</label>
-                  <select>
-                    <option value="facebook">Facebook / Instagram</option>
-                    <option value="amigo">Indicação de um amigo</option>
-                    <option value="facebook">Google</option>
-                  </select>
+                  <label>Melhor data para pagamento do boleto:</label>
+                  <input type="date" required />
                 </div>
               </div>
             </div>
@@ -397,6 +403,20 @@
               </div>              
               <small>Tire ou envie uma foto sua segurando seu documento oficial</small>
             </div>
+
+            <div>
+                <div>
+                  <label>Como conheceu a Akredito?</label>
+                  <select required>
+                    <option value=""></option>
+                    <option value="facebook">Facebook</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="google">Google</option>
+                    <option value="panfleto">Panfleto</option>
+                    <option value="amigo">Indicação de um amigo</option>
+                  </select>
+                </div>
+              </div>
        
             <div class='reason'>
               <div>
