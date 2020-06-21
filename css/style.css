@@ -956,6 +956,14 @@ footer img {
     background-position: 0;
 }
 
+.top-direito {
+    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/portfolio/direito.jpg);
+    background: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../img/portfolio/direito.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0;
+}
+
 .top-medical {
     background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/portfolio/medic.jpg);
     background: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../img/portfolio/medic.jpg);
