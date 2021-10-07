@@ -59,7 +59,7 @@ body.overflow-hidden {
 }
 
 .main-container {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .center {
@@ -924,68 +924,52 @@ footer img {
 /* About page
 ==================================================*/
 
-.top-bar {
-    color: #333;
-    padding: 150px 0 150px;
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/home-office.jpeg);
-    background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/home-office.jpeg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    text-align: center;
-}
-
-.top-som-brasil {
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/portfolio/music.jpg);
-    background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/portfolio/music.jpg);
-}
-
-.top-engvid {
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/portfolio/engvid.jpg);
-    background: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../img/portfolio/engvid.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 0;
-}
-
 .top-leap {
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/portfolio/leap.jpg);
-    background: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../img/portfolio/leap.jpg);
+    background-image: url(../img/portfolio/leap-bg.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 0;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
 }
 
-.top-direito {
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/portfolio/direito.jpg);
-    background: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../img/portfolio/direito.jpg);
+.top-genex {
+    background-image: url(../img/portfolio/genex-bg.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 0;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
 }
 
-.top-dev-academy {
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/portfolio/programming.jpeg);
-    background: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../img/portfolio/programming.jpeg);
+.top-infinicio {
+    background-image: url(../img/portfolio/infinicio-bg.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 0;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
 }
 
-.top-medical {
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/portfolio/medic.jpg);
-    background: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../img/portfolio/medic.jpg);
+.top-devacademy {
+    background-image: url(../img/portfolio/devacademy-bg.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 0;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
 }
 
-.top-bloemist {
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/portfolio/bloemist.jpg);
-    background: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../img/portfolio/bloemist.jpg);
+.top-glaz {
+    background-image: url(../img/portfolio/glaz-bg.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 0;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.top-direitoreal {
+    background-image: url(../img/portfolio/direitoreal-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 350px;
 }
 
 .top-bar h1 {
@@ -1187,11 +1171,16 @@ textarea:focus {
 
 .cat-ul {
     padding-left: 0;
-    list-style: none
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 .cat-ul li {
     display: flex;
     align-items: center;
+    width: 100px;
+    text-align: left;
 }
 .cat-ul li i {
     margin-right: 10px;
@@ -1205,6 +1194,37 @@ textarea:focus {
 .contact-title {
     margin: 0;
 }
+
+.work-show {
+    margin-top: 80px;
+}
+
+.work-show a {
+    margin-bottom: 10px;
+    display: block;
+    margin-left: 20px;
+}
+
+.work-show img {
+    margin: 0 auto;
+}
+
+.white-header {
+    background-color: #ffffff;;
+}
+
+.job-img {
+    margin-top: 30px;
+}
+
+.contact-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* Responsive media queries
 ==================================================*/
 
